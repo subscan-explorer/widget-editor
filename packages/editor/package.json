@@ -61,7 +61,14 @@
     "react-dom": "^17.0.2",
     "react-json-tree": "^0.16.1",
     "scroll-into-view": "^1.16.2",
-    "tern": "^0.24.3"
+    "tern": "^0.24.3",
+    "graphiql": "1.11.5",
+    "graphql": "16.4.0",
+    "@graphiql/react": "^0.10.0",
+    "@graphiql/toolkit": "^0.6.1",
+    "entities": "^2.0.0",
+    "graphql-language-service": "^5.0.6",
+    "markdown-it": "^12.2.0"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
@@ -69,6 +76,7 @@
     "@sunmao-ui/vite-plugins": "^1.0.5",
     "@swc/core": "^1.2.121",
     "@types/codemirror": "^5.60.5",
+    "@types/markdown-it": "^12.2.3",
     "@types/escodegen": "^0.0.7",
     "@types/json-schema": "^7.0.7",
     "@types/lodash": "^4.14.182",
