@@ -5,7 +5,6 @@
  *  LICENSE file in the root directory of this source tree.
  */
 import { useVariableEditor, UseVariableEditorArgs } from '@graphiql/react';
-import React from 'react';
 
 type VariableEditorProps = UseVariableEditorArgs & {
   active?: boolean;

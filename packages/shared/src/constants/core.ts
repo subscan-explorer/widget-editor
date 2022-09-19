@@ -11,6 +11,7 @@ export enum CoreComponentName {
 export enum CoreTraitName {
   Fetch = 'fetch',
   Event = 'event',
+  GraphQL = 'graphQL',
   Style = 'style',
   ArrayState = 'arrayState',
   Hidden = 'hidden',

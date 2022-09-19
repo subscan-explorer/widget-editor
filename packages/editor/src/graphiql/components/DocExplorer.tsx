@@ -5,7 +5,7 @@
  *  LICENSE file in the root directory of this source tree.
  */
 
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { GraphQLSchema, isType } from 'graphql';
 import { useExplorerContext, useSchemaContext } from '@graphiql/react';
 

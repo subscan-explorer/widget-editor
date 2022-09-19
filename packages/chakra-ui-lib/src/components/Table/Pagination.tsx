@@ -1,3 +1,4 @@
+import React from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import { Box, Button, IconButton } from '@chakra-ui/react';
 

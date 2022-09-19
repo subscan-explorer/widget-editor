@@ -18,6 +18,7 @@ import { Data } from './Data';
 import { EditorServices } from '../../types';
 import { ToolMenuTabs } from '../../constants/enum';
 import { DataSourceType, DATA_DATASOURCES } from '../../constants/dataSource';
+import { GraphQL } from './GraphQLApi';
 
 interface Props {
   active: string;
@@ -29,7 +30,7 @@ const DATASOURCE_TYPES = Object.values(DataSourceType);
 export const DataSource: React.FC<Props> = props => {
   const { active, services } = props;
   const { editorStore } = services;
-  const NORMAL_DATASOURCES = DATA_DATASOURCES.map((item)=> ({
+  const NORMAL_DATASOURCES = DATA_DATASOURCES.map(item => ({
     ...item,
     title: item.type,
     datas: editorStore.dataSources[item.type],
@@ -94,6 +95,12 @@ export const DataSource: React.FC<Props> = props => {
       >
         <Api
           apis={editorStore.dataSources[DataSourceType.API] || []}
+          active={active}
+          onItemClick={onApiItemClick}
+          onItemRemove={onApiItemRemove}
+        />
+        <GraphQL
+          apis={editorStore.dataSources[DataSourceType.GRAPHQL] || []}
           active={active}
           onItemClick={onApiItemClick}
           onItemRemove={onApiItemRemove}

@@ -19,6 +19,7 @@ import CoreSlot from '../traits/core/Slot';
 import CoreStyle from '../traits/core/Style';
 import CoreHidden from '../traits/core/Hidden';
 import CoreFetch from '../traits/core/Fetch';
+import CoreGraphQL from '../traits/core/GraphQL';
 import CoreValidation from '../traits/core/Validation';
 import CoreLocalStorage from '../traits/core/LocalStorage';
 import CoreTransformer from '../traits/core/Transformer';
@@ -261,6 +262,7 @@ export function initRegistry(
   registry.registerTrait(CoreSlot);
   registry.registerTrait(CoreStyle);
   registry.registerTrait(CoreHidden);
+  registry.registerTrait(CoreGraphQL);
   registry.registerTrait(CoreFetch);
   registry.registerTrait(CoreValidation);
   registry.registerTrait(CoreLocalStorage);

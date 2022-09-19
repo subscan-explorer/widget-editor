@@ -11,7 +11,7 @@ import {
   useSelectHistoryItem,
 } from '@graphiql/react';
 import { QueryStoreItem } from '@graphiql/toolkit';
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export function QueryHistory() {
   const { hide, items } = useHistoryContext({

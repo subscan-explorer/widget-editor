@@ -15,8 +15,8 @@ export const BadgePropsSpec = {
   maxCount: Type.Number({
     title: 'Max Count',
     category: Category.Basic,
-    // eslint-disable-next-line no-template-curly-in-string
     description:
+      // eslint-disable-next-line no-template-curly-in-string
       'Max count to show. If count is larger than this value, it will be displayed as ${maxCount}+',
   }),
   dot: Type.Boolean({

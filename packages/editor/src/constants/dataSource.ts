@@ -1,8 +1,8 @@
 import { CORE_VERSION, CoreTraitName } from '@sunmao-ui/shared';
 
-
 export enum DataSourceType {
   API = 'API',
+  GRAPHQL = 'GraphQL',
   STATE = 'State',
   LOCALSTORAGE = 'LocalStorage',
   TRANSFORMER = 'Transformer',
@@ -10,6 +10,7 @@ export enum DataSourceType {
 
 export const DATASOURCE_NAME_MAP = {
   [DataSourceType.API]: 'api',
+  [DataSourceType.GRAPHQL]: 'graphQL',
   [DataSourceType.STATE]: 'state',
   [DataSourceType.LOCALSTORAGE]: 'localStorage',
   [DataSourceType.TRANSFORMER]: 'transformer',
@@ -17,6 +18,7 @@ export const DATASOURCE_NAME_MAP = {
 
 export const DATASOURCE_TRAIT_TYPE_MAP = {
   [DataSourceType.API]: `${CORE_VERSION}/${CoreTraitName.Fetch}`,
+  [DataSourceType.GRAPHQL]: `${CORE_VERSION}/${CoreTraitName.GraphQL}`,
   [DataSourceType.STATE]: `${CORE_VERSION}/${CoreTraitName.State}`,
   [DataSourceType.LOCALSTORAGE]: `${CORE_VERSION}/${CoreTraitName.LocalStorage}`,
   [DataSourceType.TRANSFORMER]: `${CORE_VERSION}/${CoreTraitName.Transformer}`,

@@ -17,7 +17,7 @@ import {
   isObjectType,
   isUnionType,
 } from 'graphql';
-import React, { ReactNode, useState } from 'react';
+import { ReactNode, useState } from 'react';
 
 import Argument from './Argument';
 import DefaultValue from './DefaultValue';

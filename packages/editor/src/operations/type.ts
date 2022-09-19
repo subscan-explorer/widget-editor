@@ -1,5 +1,5 @@
 import { RegistryInterface } from '@sunmao-ui/runtime';
-import { AppModel } from "../AppModel/AppModel";
+import { AppModel } from '../AppModel/AppModel';
 
 export const leafSymbol = Symbol('leaf');
 export const branchSymbol = Symbol('branch');
@@ -108,6 +108,7 @@ export class OperationList<TOperation extends IOperation = IOperation> {
  * list node of doubly linked list
  */
 export class ListNode<T, TPrev = T, TNext = T> {
+  // eslint-disable-next-line no-useless-constructor
   constructor(
     public val: T,
     public prev: ListNode<TPrev> | null = null,

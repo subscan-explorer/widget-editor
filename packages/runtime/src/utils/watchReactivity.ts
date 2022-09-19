@@ -1,3 +1,4 @@
+/* eslint-disable no-redeclare */
 // forked from https://github.com/vue-reactivity/watch/blob/master/src/index.ts by Anthony Fu
 // ported from https://github.com/vuejs/vue-next/blob/master/packages/runtime-core/src/apiWatch.ts by Evan You
 

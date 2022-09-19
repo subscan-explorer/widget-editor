@@ -11,6 +11,7 @@ import { StateViewer } from './CodeEditor';
 import { DataSource } from './DataSource';
 import { DataSourceType, DATASOURCE_TRAIT_TYPE_MAP } from '../constants/dataSource';
 import { ApiForm } from './DataSource/ApiForm';
+import { GraphQL } from './DataSource/GraphQL';
 import { ComponentForm } from './ComponentForm';
 import ErrorBoundary from './ErrorBoundary';
 import { PreviewModal } from './PreviewModal';
@@ -22,6 +23,7 @@ import { DataForm } from './DataSource/DataForm';
 import { Explorer } from './Explorer';
 import { Resizable } from 're-resizable';
 import { CodeModeModal } from './CodeModeModal';
+import '../graphiql/graphiql.css';
 
 type ReturnOfInit = ReturnType<typeof initSunmaoUI>;
 
@@ -247,6 +249,15 @@ export const Editor: React.FC<Props> = observer(
             </Resizable>
             {activeDataSource && activeDataSourceType === DataSourceType.API ? (
               <ApiForm
+                key={activeDataSource.id}
+                api={activeDataSource}
+                services={services}
+                store={stateStore}
+                className={ApiFormStyle}
+              />
+            ) : null}
+            {activeDataSource && activeDataSourceType === DataSourceType.GRAPHQL ? (
+              <GraphQL
                 key={activeDataSource.id}
                 api={activeDataSource}
                 services={services}

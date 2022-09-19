@@ -6,6 +6,7 @@ export {
   default as localStorageTrait,
   LocalStorageTraitPropertiesSpec,
 } from './LocalStorage';
+export { default as graphQLTrait, GraphQLTraitPropertiesSpec } from './GraphQL';
 export { default as slotTrait, PropsSpec as SlotTraitPropertiesSpec } from './Slot';
 export { default as styleTrait, StyleTraitPropertiesSpec } from './Style';
 export {

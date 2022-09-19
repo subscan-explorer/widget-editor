@@ -7,7 +7,6 @@
 
 import { useExplorerContext } from '@graphiql/react';
 import { GraphQLType, isListType, isNonNullType } from 'graphql';
-import React from 'react';
 
 type TypeLinkProps = {
   type: GraphQLType;

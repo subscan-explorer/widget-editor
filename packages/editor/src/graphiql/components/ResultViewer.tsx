@@ -6,7 +6,6 @@
  */
 
 import { useResponseEditor, UseResponseEditorArgs } from '@graphiql/react';
-import React from 'react';
 
 /**
  * ResultViewer

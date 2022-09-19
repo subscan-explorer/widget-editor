@@ -5,7 +5,6 @@
  *  LICENSE file in the root directory of this source tree.
  */
 
-import React from 'react';
 import { astFromValue, print, ValueNode } from 'graphql';
 import { ExplorerFieldDef } from '@graphiql/react';
 

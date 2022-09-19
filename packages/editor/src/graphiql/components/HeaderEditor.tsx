@@ -5,7 +5,6 @@
  *  LICENSE file in the root directory of this source tree.
  */
 import { useHeaderEditor, UseHeaderEditorArgs } from '@graphiql/react';
-import React from 'react';
 
 type HeaderEditorProps = UseHeaderEditorArgs & { active?: boolean };
 

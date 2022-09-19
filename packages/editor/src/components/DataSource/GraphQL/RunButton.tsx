@@ -4,11 +4,12 @@
  *  This source code is licensed under the MIT license found in the
  *  LICENSE file in the root directory of this source tree.
  */
-import { useEditorContext, useExecutionContext } from '@graphiql/react';
-import { OperationDefinitionNode } from 'graphql';
 import { useState } from 'react';
 
-export function ExecuteButton({ executeCallback }: { executeCallback?: () => void }) {
+import { useEditorContext, useExecutionContext } from '@graphiql/react';
+import { OperationDefinitionNode } from 'graphql';
+
+export function ExecuteButton({ executeCallback }: { executeCallback: () => void }) {
   const { queryEditor, setOperationName } = useEditorContext({ nonNull: true });
   const { isFetching, operationName, run, stop } = useExecutionContext({
     nonNull: true,
@@ -67,7 +68,7 @@ export function ExecuteButton({ executeCallback }: { executeCallback?: () => voi
                   stop();
                 } else {
                   run();
-                  executeCallback && executeCallback();
+                  executeCallback();
                 }
               }
             : undefined
@@ -105,7 +106,7 @@ export function ExecuteButton({ executeCallback }: { executeCallback?: () => voi
                     setOperationName(selectedOperationName);
                   }
                   run();
-                  executeCallback && executeCallback();
+                  executeCallback();
                 }}
               >
                 {opName}

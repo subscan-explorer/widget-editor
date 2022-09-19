@@ -5,7 +5,7 @@
  *  LICENSE file in the root directory of this source tree.
  */
 
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 
 import Argument from './Argument';
 import TypeLink from './TypeLink';

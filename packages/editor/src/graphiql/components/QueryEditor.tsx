@@ -6,7 +6,6 @@
  */
 
 import { useQueryEditor, UseQueryEditorArgs } from '@graphiql/react';
-import React from 'react';
 
 /**
  * QueryEditor

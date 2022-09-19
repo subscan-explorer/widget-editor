@@ -12,9 +12,9 @@ const PaginationStateSpec = Type.Object({
 });
 
 const exampleProperties: Static<typeof PaginationPropsSpec> = {
-  pageSize: 10,
-  total: 300,
-  defaultCurrent: 3,
+  pageSize: 25,
+  total: 100,
+  defaultCurrent: 1,
   disabled: false,
   hideOnSinglePage: true,
   size: 'default',

@@ -301,6 +301,8 @@ export type GraphiQLProps = {
       };
 
   children?: ReactNode;
+
+  executeCallback?: () => void;
 };
 
 /**
@@ -717,7 +719,7 @@ class GraphiQLWithContext extends React.Component<
               {this.props.beforeTopBarContent}
               <div className="topBar">
                 {logo}
-                <ExecuteButton />
+                <ExecuteButton executeCallback={this.props.executeCallback} />
                 {toolbar}
               </div>
               {this.props.explorerContext && !this.props.explorerContext.isVisible && (
