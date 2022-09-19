@@ -90,7 +90,7 @@ export const Editor: React.FC<Props> = observer(
 
     const inspectForm = useMemo(() => {
       if (activeDataSource && activeDataSourceType) {
-        return (
+        return activeDataSourceType === DataSourceType.API ? null : (
           <DataForm
             datasource={activeDataSource}
             services={services}
