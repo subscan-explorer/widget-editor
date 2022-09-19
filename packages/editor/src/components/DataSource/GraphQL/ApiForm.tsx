@@ -42,8 +42,13 @@ export const GraphQL: React.FC<Props> = props => {
     trait?.properties.query as Static<typeof GraphQLTraitPropertiesSpec>['query']
   );
   const [variables, setVariables] = useState<string>(
-    trait?.properties.variables as Static<typeof GraphQLTraitPropertiesSpec>['variables']
+    (
+      (trait?.properties.variables as Static<
+        typeof GraphQLTraitPropertiesSpec
+      >['variables']) || '{{{}}}'
+    ).toString()
   );
+
   const [url, setUrl] = useState<string>(
     trait?.properties.url as Static<typeof GraphQLTraitPropertiesSpec>['url']
   );
