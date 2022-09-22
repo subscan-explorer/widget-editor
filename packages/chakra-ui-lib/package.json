@@ -48,11 +48,11 @@
     "@vitejs/plugin-react": "^2.0.1",
     "babel-jest": "^27.1.0",
     "jest": "^27.1.0",
+    "postcss": "^8.4.5",
+    "postcss-import": "^14.0.2",
     "tsup": "^6.2.2",
     "typescript": "^4.5.0",
-    "vite": "^3.0.8",
-    "postcss": "^8.4.5",
-    "postcss-import": "^14.0.2"
+    "vite": "^3.0.8"
   },
   "peerDependencies": {
     "@emotion/css": "^11.7.1",
@@ -63,5 +63,6 @@
     "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  }
+  },
+  "gitHead": "b586cf668d493190f5a2f85705ef15b7fed30aaa"
 }

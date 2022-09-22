@@ -32,8 +32,8 @@
     "url": "https://github.com/smartxworks/sunmao-ui/issues"
   },
   "devDependencies": {
-    "@swc/core": "^1.2.121",
     "@sinclair/typebox": "^0.21.2",
+    "@swc/core": "^1.2.121",
     "@types/jest": "^26.0.23",
     "@types/json-schema": "^7.0.7",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
@@ -44,5 +44,6 @@
     "prettier": "^2.3.2",
     "tsup": "^6.2.2",
     "typescript": "^4.5.0"
-  }
+  },
+  "gitHead": "b586cf668d493190f5a2f85705ef15b7fed30aaa"
 }

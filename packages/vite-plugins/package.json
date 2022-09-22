@@ -20,5 +20,6 @@
   "devDependencies": {
     "tsup": "^6.2.2",
     "vite": "^3.0.8"
-  }
+  },
+  "gitHead": "b586cf668d493190f5a2f85705ef15b7fed30aaa"
 }
