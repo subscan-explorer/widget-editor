@@ -3,7 +3,7 @@ import { observer } from 'mobx-react-lite';
 import { Box } from '@chakra-ui/react';
 import { SlotDropArea } from './SlotDropArea';
 import { EditorServices } from '../../types';
-import { CORE_VERSION, CoreComponentName } from '@sunmao-ui/shared';
+import { CORE_VERSION, CoreComponentName } from '@sunmao-ui-fork/shared';
 
 const verticalStackList = ['chakra_ui/v1/vstack'];
 

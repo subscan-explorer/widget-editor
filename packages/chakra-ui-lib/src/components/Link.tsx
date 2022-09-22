@@ -1,7 +1,11 @@
 import { Link } from '@chakra-ui/react';
 import { css } from '@emotion/css';
 import { Type } from '@sinclair/typebox';
-import { implementRuntimeComponent, Text, TextPropertySpec } from '@sunmao-ui/runtime';
+import {
+  implementRuntimeComponent,
+  Text,
+  TextPropertySpec,
+} from '@sunmao-ui-fork/runtime';
 import { BASIC, BEHAVIOR } from './constants/category';
 
 const PropsSpec = Type.Object({

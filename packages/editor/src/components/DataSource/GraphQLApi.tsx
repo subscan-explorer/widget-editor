@@ -8,9 +8,9 @@ import {
   AccordionIcon,
   AccordionPanel,
 } from '@chakra-ui/react';
-import { ComponentSchema } from '@sunmao-ui/core';
+import { ComponentSchema } from '@sunmao-ui-fork/core';
 import { DataSourceItem } from './DataSourceItem';
-// import { CORE_VERSION, CoreTraitName } from '@sunmao-ui/shared';
+// import { CORE_VERSION, CoreTraitName } from '@sunmao-ui-fork/shared';
 
 const COLOR_MAP = {
   GET: 'green',

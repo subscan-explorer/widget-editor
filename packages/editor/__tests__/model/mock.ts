@@ -1,4 +1,4 @@
-import { Application, ComponentSchema } from '@sunmao-ui/core';
+import { Application, ComponentSchema } from '@sunmao-ui-fork/core';
 
 export const AppSchema: Application = {
   kind: 'Application',

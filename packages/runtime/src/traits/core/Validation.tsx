@@ -1,6 +1,6 @@
 import { Type, Static, TSchema } from '@sinclair/typebox';
 import { implementRuntimeTrait } from '../../utils/buildKit';
-import { CORE_VERSION, CoreTraitName, StringUnion } from '@sunmao-ui/shared';
+import { CORE_VERSION, CoreTraitName, StringUnion } from '@sunmao-ui-fork/shared';
 
 type ParseValidateOption<
   T extends Record<string, TSchema>,

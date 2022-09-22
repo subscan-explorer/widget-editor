@@ -1,11 +1,11 @@
-# `@sunmao-ui/vite-plugins`
+# `@sunmao-ui-fork/vite-plugins`
 
 > TODO: description
 
 ## Usage
 
 ```
-const vitePlugins = require('@sunmao-ui/vite-plugins');
+const vitePlugins = require('@sunmao-ui-fork/vite-plugins');
 
 // TODO: DEMONSTRATE API
 ```

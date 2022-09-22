@@ -1,5 +1,5 @@
 import React from 'react';
-import { WidgetProps, implementWidget } from '@sunmao-ui/editor-sdk';
+import { WidgetProps, implementWidget } from '@sunmao-ui-fork/editor-sdk';
 import { ColumnSpec } from '../generated/types/Table';
 import { Static } from '@sinclair/typebox';
 import { Select } from '@arco-design/web-react';
@@ -7,7 +7,7 @@ import { ARCO_V1_VERSION } from '../constants/widgets';
 
 type TablePrimaryKeyWidgetID = 'arco/v1/primaryKey';
 
-declare module '@sunmao-ui/editor-sdk' {
+declare module '@sunmao-ui-fork/editor-sdk' {
   interface WidgetOptionsMap {
     'arco/v1/primaryKey': Record<string, unknown>;
   }

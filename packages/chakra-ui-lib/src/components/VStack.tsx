@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { Type } from '@sinclair/typebox';
 import { VStack as BaseVStack } from '@chakra-ui/react';
-import { implementRuntimeComponent } from '@sunmao-ui/runtime';
+import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
 import {
   DirectionSpec,
   FlexWrapSpec,

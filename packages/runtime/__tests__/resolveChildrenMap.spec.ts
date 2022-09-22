@@ -1,4 +1,4 @@
-import { createApplication } from '@sunmao-ui/core';
+import { createApplication } from '@sunmao-ui-fork/core';
 import { resolveChildrenMap } from '../src/utils/resolveChildrenMap';
 
 const origin = createApplication({
@@ -100,6 +100,9 @@ describe('resolve tree map', () => {
       'text1',
       'text2',
     ]);
-    expect(childrenMap['hstack2']._grandChildren!.map(c => c.id)).toEqual(['text1', 'text2']);
+    expect(childrenMap['hstack2']._grandChildren!.map(c => c.id)).toEqual([
+      'text1',
+      'text2',
+    ]);
   });
 });

@@ -1,7 +1,7 @@
 import { Type } from '@sinclair/typebox';
 import { StringUnion } from '../../sunmao-helper';
 import { Category } from '../../constants/category';
-import { TextPropertySpec } from '@sunmao-ui/runtime';
+import { TextPropertySpec } from '@sunmao-ui-fork/runtime';
 
 export const FormControlPropsSpec = {
   label: TextPropertySpec,

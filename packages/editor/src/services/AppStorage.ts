@@ -1,5 +1,10 @@
 import { observable, makeObservable, action, toJS } from 'mobx';
-import { Application, ComponentSchema, Module, RuntimeModule } from '@sunmao-ui/core';
+import {
+  Application,
+  ComponentSchema,
+  Module,
+  RuntimeModule,
+} from '@sunmao-ui-fork/core';
 import { produce } from 'immer';
 import { DefaultNewModule, EmptyAppSchema } from '../constants';
 import { addModuleId, removeModuleId } from '../utils/addModuleId';

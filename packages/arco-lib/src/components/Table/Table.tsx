@@ -20,7 +20,7 @@ import {
   implementRuntimeComponent,
   ImplWrapper,
   formatSlotKey,
-} from '@sunmao-ui/runtime';
+} from '@sunmao-ui-fork/runtime';
 import { Type, Static } from '@sinclair/typebox';
 import { ResizableTitle } from './ResizableTitle';
 

@@ -1,6 +1,6 @@
 import { Type } from '@sinclair/typebox';
 import { Tooltip } from '@chakra-ui/react';
-import { implementRuntimeComponent, TextPropertySpec } from '@sunmao-ui/runtime';
+import { implementRuntimeComponent, TextPropertySpec } from '@sunmao-ui-fork/runtime';
 import { getColorSchemePropertySpec } from './Types/ColorScheme';
 import { BASIC, LAYOUT, BEHAVIOR, APPEARANCE } from './constants/category';
 

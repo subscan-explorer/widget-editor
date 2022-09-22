@@ -1,10 +1,10 @@
-import { Application, Module } from '@sunmao-ui/core';
+import { Application, Module } from '@sunmao-ui-fork/core';
 import {
   initSunmaoUI,
   RegistryInterface,
   StateManagerInterface,
-} from '@sunmao-ui/runtime';
-import { WidgetManager } from '@sunmao-ui/editor-sdk';
+} from '@sunmao-ui-fork/runtime';
+import { WidgetManager } from '@sunmao-ui-fork/editor-sdk';
 import { EditorStore } from './services/EditorStore';
 import { EventBusType } from './services/eventBus';
 import { AppModelManager } from './operations/AppModelManager';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { HStack, Tag, Text, CloseButton } from '@chakra-ui/react';
-import { ComponentSchema } from '@sunmao-ui/core';
+import { ComponentSchema } from '@sunmao-ui-fork/core';
 import { css, cx } from '@emotion/css';
 
 const ItemStyle = css`

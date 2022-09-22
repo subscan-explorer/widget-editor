@@ -1,5 +1,5 @@
-import { EQ, NOT, GT, LT, GTE, LTE, COMPARISON_OPERATORS } from '@sunmao-ui/shared';
-import type { Condition, ComparisonOperator } from '@sunmao-ui/shared';
+import { EQ, NOT, GT, LT, GTE, LTE, COMPARISON_OPERATORS } from '@sunmao-ui-fork/shared';
+import type { Condition, ComparisonOperator } from '@sunmao-ui-fork/shared';
 
 export function isComparisonOperator(
   condition: Condition

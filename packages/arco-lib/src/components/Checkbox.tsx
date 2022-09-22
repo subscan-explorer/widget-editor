@@ -1,6 +1,6 @@
 import { Checkbox as BaseCheckbox } from '@arco-design/web-react';
 import { Type, Static } from '@sinclair/typebox';
-import { implementRuntimeComponent } from '@sunmao-ui/runtime';
+import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
 import {
   CheckboxPropsSpec as BaseCheckboxPropsSpec,
   CheckboxOptionSpec as BaseCheckboxOptionSpec,

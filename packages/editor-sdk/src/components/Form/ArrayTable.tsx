@@ -2,7 +2,7 @@ import React, { useMemo, useCallback } from 'react';
 import { css } from '@emotion/css';
 import { IconButton, Table, Thead, Tbody, Tr, Th, Td } from '@chakra-ui/react';
 import { AddIcon } from '@chakra-ui/icons';
-import { generateDefaultValueFromSpec, isJSONSchema } from '@sunmao-ui/shared';
+import { generateDefaultValueFromSpec, isJSONSchema } from '@sunmao-ui-fork/shared';
 import { JSONSchema7 } from 'json-schema';
 import { ArrayButtonGroup } from './ArrayButtonGroup';
 import { PopoverWidget } from '../Widgets/PopoverWidget';

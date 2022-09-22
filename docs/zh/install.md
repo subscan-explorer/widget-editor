@@ -11,7 +11,7 @@ Sunmao 有 runtime 和 editor 两个包。runtime 是用来运行 Sunmao 应用�
 #### 安装 Sunmao runtime
 
 ```
-yarn add @sunmao-ui/runtime
+yarn add @sunmao-ui-fork/runtime
 yarn add react
 yarn add react-dom
 ```
@@ -19,7 +19,7 @@ yarn add react-dom
 #### 安装 Sunmao editor
 
 ```
-yarn add @sunmao-ui/editor
+yarn add @sunmao-ui-fork/editor
 yarn add react
 yarn add react-dom
 ```
@@ -31,7 +31,7 @@ runtime 和 editor 的启动方式大致一样，只是方法名称和参数不�
 #### 启动 Sunmao runtime
 
 ```
-import { initSunmaoUI } from "@sunmao-ui/runtime";
+import { initSunmaoUI } from "@sunmao-ui-fork/runtime";
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -43,7 +43,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 #### 启动 Sunmao editor
 
 ```
-import { initSunmaoUIEditor } from "@sunmao-ui/editor";
+import { initSunmaoUIEditor } from "@sunmao-ui-fork/editor";
 import React from "react";
 import ReactDOM from "react-dom";
 

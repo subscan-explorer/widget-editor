@@ -1,7 +1,11 @@
 import { useEffect } from 'react';
 import { Kbd as BaseKbd } from '@chakra-ui/react';
 import { Type } from '@sinclair/typebox';
-import { implementRuntimeComponent, Text, TextPropertySpec } from '@sunmao-ui/runtime';
+import {
+  implementRuntimeComponent,
+  Text,
+  TextPropertySpec,
+} from '@sunmao-ui-fork/runtime';
 import { css } from '@emotion/css';
 
 const StateSpec = Type.Object({

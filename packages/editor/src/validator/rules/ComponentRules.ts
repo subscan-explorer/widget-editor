@@ -3,7 +3,7 @@ import {
   ComponentValidateContext,
   ValidateErrorResult,
 } from '../interfaces';
-import { CORE_VERSION, CoreComponentName } from '@sunmao-ui/shared';
+import { CORE_VERSION, CoreComponentName } from '@sunmao-ui-fork/shared';
 
 class ModuleValidatorRule implements ComponentValidatorRule {
   kind: 'component' = 'component';

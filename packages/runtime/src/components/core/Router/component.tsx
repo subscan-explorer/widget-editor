@@ -22,7 +22,7 @@ import {
   useNavigate,
 } from './hooks';
 import { UIServices, ChildrenMap } from '../../../types';
-import { RuntimeComponentSchema } from '@sunmao-ui/core';
+import { RuntimeComponentSchema } from '@sunmao-ui-fork/core';
 
 export type RouteLikeElement = PropsWithChildren<{
   path?: string;

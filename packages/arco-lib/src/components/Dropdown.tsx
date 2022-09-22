@@ -3,7 +3,7 @@ import {
   Menu as BaseMenu,
   Button,
 } from '@arco-design/web-react';
-import { implementRuntimeComponent } from '@sunmao-ui/runtime';
+import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
 import { Type, Static } from '@sinclair/typebox';
 import { FALLBACK_METADATA, getComponentProps } from '../sunmao-helper';
 import { DropdownPropsSpec as BaseDropdownPropsSpec } from '../generated/types/Dropdown';

@@ -2,7 +2,7 @@ import React, { useCallback, useEffect } from 'react';
 import { WidgetProps } from '../../types/widget';
 import { implementWidget } from '../../utils/widget';
 import { Switch } from '@chakra-ui/react';
-import { CORE_VERSION, CoreWidgetName } from '@sunmao-ui/shared';
+import { CORE_VERSION, CoreWidgetName } from '@sunmao-ui-fork/shared';
 
 type BooleanFieldType = `${typeof CORE_VERSION}/${CoreWidgetName.BooleanField}`;
 declare module '../../types/widget' {

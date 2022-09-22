@@ -1,5 +1,5 @@
-import { ComponentSchema } from '@sunmao-ui/core';
-import { RegistryInterface } from '@sunmao-ui/runtime';
+import { ComponentSchema } from '@sunmao-ui-fork/core';
+import { RegistryInterface } from '@sunmao-ui-fork/runtime';
 import WidgetManager from '../models/WidgetManager';
 import type { Operations } from '../types/operation';
 

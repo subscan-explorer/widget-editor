@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CORE_VERSION, StyleWidgetName } from '@sunmao-ui/shared';
+import { CORE_VERSION, StyleWidgetName } from '@sunmao-ui-fork/shared';
 import { WidgetProps } from '../../../types/widget';
 import { implementWidget } from '../../../utils/widget';
 import {

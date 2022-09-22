@@ -10,8 +10,8 @@ import {
 } from '@chakra-ui/react';
 import { DataSourceItem } from './DataSourceItem';
 import { EditorServices } from '../../types';
-import { ComponentSchema } from '@sunmao-ui/core';
-import { watch } from '@sunmao-ui/runtime';
+import { ComponentSchema } from '@sunmao-ui-fork/core';
+import { watch } from '@sunmao-ui-fork/runtime';
 
 interface Props {
   datas: ComponentSchema[];
@@ -47,7 +47,7 @@ export const Data: React.FC<Props> = props => {
   const { stateManager } = services;
   const { store } = stateManager;
   const [search, setSearch] = useState('');
-  const [reactiveStore, setReactiveStore] = useState<Record<string, any>>({...store});
+  const [reactiveStore, setReactiveStore] = useState<Record<string, any>>({ ...store });
   const list = useMemo(
     () => datas.filter(({ id }) => id.includes(search)),
     [search, datas]
@@ -60,7 +60,7 @@ export const Data: React.FC<Props> = props => {
 
     return stop;
   }, [store]);
-  
+
   const StateItems = () => (
     <>
       {list.map(state => {

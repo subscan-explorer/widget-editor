@@ -3,7 +3,7 @@ import {
   RuntimeApplication,
   RuntimeComponentSchema,
   PropsBeforeEvaled,
-} from '@sunmao-ui/core';
+} from '@sunmao-ui-fork/core';
 import { Static } from '@sinclair/typebox';
 import { ColumnSpec, ColumnsPropertySpec, ContentSlotPropsSpec } from './TableTypes';
 import { Button, Link, Td, Text } from '@chakra-ui/react';
@@ -16,7 +16,7 @@ import {
   ImplWrapper,
   SlotsElements,
   formatSlotKey,
-} from '@sunmao-ui/runtime';
+} from '@sunmao-ui-fork/runtime';
 
 export const TableTd: React.FC<{
   index: number;

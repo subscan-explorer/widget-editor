@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { RuntimeTraitSchema } from '@sunmao-ui/core';
+import { RuntimeTraitSchema } from '@sunmao-ui-fork/core';
 import { ImplWrapperMain } from './ImplWrapperMain';
 import { useRuntimeFunctions } from './hooks/useRuntimeFunctions';
 import { initSingleComponentState } from '../../../utils/initStateAndMethod';

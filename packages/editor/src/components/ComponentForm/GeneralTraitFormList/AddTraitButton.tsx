@@ -8,10 +8,10 @@ import {
   MenuList,
   Portal,
 } from '@chakra-ui/react';
-import { RegistryInterface } from '@sunmao-ui/runtime';
+import { RegistryInterface } from '@sunmao-ui-fork/runtime';
 import React, { useMemo } from 'react';
 import { hideCreateTraitsList } from '../../../constants';
-import { ComponentSchema } from '@sunmao-ui/core';
+import { ComponentSchema } from '@sunmao-ui-fork/core';
 
 type Props = {
   registry: RegistryInterface;

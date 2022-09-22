@@ -1,11 +1,11 @@
 import React from 'react';
-import { ComponentSchema, TraitSchema } from '@sunmao-ui/core';
+import { ComponentSchema, TraitSchema } from '@sunmao-ui-fork/core';
 import { HStack, IconButton, VStack } from '@chakra-ui/react';
-import { generateDefaultValueFromSpec } from '@sunmao-ui/shared';
+import { generateDefaultValueFromSpec } from '@sunmao-ui-fork/shared';
 import { CloseIcon } from '@chakra-ui/icons';
 import { formWrapperCSS } from '../style';
 import { EditorServices } from '../../../types';
-import { SpecWidget } from '@sunmao-ui/editor-sdk';
+import { SpecWidget } from '@sunmao-ui-fork/editor-sdk';
 import { genOperation } from '../../../operations';
 
 type Props = {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { HStack, Select, Text, VStack } from '@chakra-ui/react';
-import { CORE_VERSION, StyleWidgetName } from '@sunmao-ui/shared';
+import { CORE_VERSION, StyleWidgetName } from '@sunmao-ui-fork/shared';
 import { WidgetProps } from '../../../types/widget';
 import { implementWidget, mergeWidgetOptionsIntoSpec } from '../../../utils/widget';
 import { ExpressionWidget } from '../ExpressionWidget';

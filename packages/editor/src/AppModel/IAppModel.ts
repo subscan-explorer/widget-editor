@@ -3,7 +3,7 @@ import {
   TraitSchema,
   MethodSchema,
   RuntimeTrait,
-} from '@sunmao-ui/core';
+} from '@sunmao-ui-fork/core';
 import { CustomOptions } from '@sinclair/typebox';
 import { Emitter } from 'mitt';
 import { Node } from 'acorn';

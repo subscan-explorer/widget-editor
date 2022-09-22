@@ -1,4 +1,4 @@
-import { CORE_VERSION, CoreTraitName } from '@sunmao-ui/shared';
+import { CORE_VERSION, CoreTraitName } from '@sunmao-ui-fork/shared';
 
 export enum DataSourceType {
   API = 'API',

@@ -1,7 +1,7 @@
 import { Button } from '@arco-design/web-react';
 import { css } from '@emotion/css';
-import { Application } from '@sunmao-ui/core';
-import { initSunmaoUI } from '@sunmao-ui/runtime';
+import { Application } from '@sunmao-ui-fork/core';
+import { initSunmaoUI } from '@sunmao-ui-fork/runtime';
 import { useState } from 'react';
 import { ArcoDesignLib } from '../../lib';
 

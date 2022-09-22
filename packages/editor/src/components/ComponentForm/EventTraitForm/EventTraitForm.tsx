@@ -1,9 +1,9 @@
 import React, { useMemo, useCallback } from 'react';
 import { VStack } from '@chakra-ui/react';
 import { Static } from '@sinclair/typebox';
-import { ComponentSchema } from '@sunmao-ui/core';
-import { CORE_VERSION, CoreTraitName, EventHandlerSpec } from '@sunmao-ui/shared';
-import { ArrayField, mergeWidgetOptionsIntoSpec } from '@sunmao-ui/editor-sdk';
+import { ComponentSchema } from '@sunmao-ui-fork/core';
+import { CORE_VERSION, CoreTraitName, EventHandlerSpec } from '@sunmao-ui-fork/shared';
+import { ArrayField, mergeWidgetOptionsIntoSpec } from '@sunmao-ui-fork/editor-sdk';
 import { genOperation } from '../../../operations';
 import { EditorServices } from '../../../types';
 

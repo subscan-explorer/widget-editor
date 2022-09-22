@@ -1,4 +1,4 @@
-import { Application } from '@sunmao-ui/core';
+import { Application } from '@sunmao-ui-fork/core';
 
 const buttonShape: Application = {
   kind: 'Application',

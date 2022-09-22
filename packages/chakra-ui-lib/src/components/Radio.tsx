@@ -1,7 +1,11 @@
 import { useEffect } from 'react';
 import { Type } from '@sinclair/typebox';
 import { Radio as BaseRadio } from '@chakra-ui/react';
-import { implementRuntimeComponent, Text, TextPropertySpec } from '@sunmao-ui/runtime';
+import {
+  implementRuntimeComponent,
+  Text,
+  TextPropertySpec,
+} from '@sunmao-ui-fork/runtime';
 import { getColorSchemePropertySpec } from './Types/ColorScheme';
 import { css } from '@emotion/css';
 import { BASIC, BEHAVIOR, APPEARANCE, LAYOUT } from './constants/category';

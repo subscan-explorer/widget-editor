@@ -12,11 +12,11 @@ import {
   InputRightElement,
   Tag,
 } from '@chakra-ui/react';
-import { CoreComponentName, CORE_VERSION } from '@sunmao-ui/shared';
+import { CoreComponentName, CORE_VERSION } from '@sunmao-ui-fork/shared';
 import { groupBy, sortBy } from 'lodash';
 import { EditorServices } from '../../types';
 import { ExplorerMenuTabs } from '../../constants/enum';
-import { RuntimeComponent, SlotSpec } from '@sunmao-ui/core';
+import { RuntimeComponent, SlotSpec } from '@sunmao-ui-fork/core';
 import { css } from '@emotion/css';
 import { ComponentFilter } from './ComponentFilter';
 import { JSONSchema7 } from 'json-schema';

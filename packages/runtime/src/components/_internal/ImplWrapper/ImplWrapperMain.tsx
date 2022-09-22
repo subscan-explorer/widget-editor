@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { merge, mergeWith, isArray, omit } from 'lodash';
-import { RuntimeTraitSchema } from '@sunmao-ui/core';
+import { RuntimeTraitSchema } from '@sunmao-ui-fork/core';
 import { watch } from '../../../utils/watchReactivity';
 import { ImplWrapperProps, TraitResult } from '../../../types';
 import { useRuntimeFunctions } from './hooks/useRuntimeFunctions';

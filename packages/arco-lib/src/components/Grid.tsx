@@ -1,4 +1,4 @@
-import { implementRuntimeComponent } from '@sunmao-ui/runtime';
+import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
 import { Type } from '@sinclair/typebox';
 import { Grid } from '@arco-design/web-react';
 import { css } from '@emotion/css';

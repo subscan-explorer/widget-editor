@@ -1,5 +1,5 @@
-import { TraitSchema, RuntimeTrait } from '@sunmao-ui/core';
-import { RegistryInterface } from '@sunmao-ui/runtime';
+import { TraitSchema, RuntimeTrait } from '@sunmao-ui-fork/core';
+import { RegistryInterface } from '@sunmao-ui-fork/runtime';
 import {
   IComponentModel,
   TraitType,

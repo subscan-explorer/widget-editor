@@ -1,6 +1,6 @@
 import { Type } from '@sinclair/typebox';
 import { StringUnion } from '../../sunmao-helper';
-import { EventHandlerSpec } from '@sunmao-ui/shared';
+import { EventHandlerSpec } from '@sunmao-ui-fork/shared';
 import { Category } from '../../constants/category';
 
 const PaginationSpec = Type.Object(

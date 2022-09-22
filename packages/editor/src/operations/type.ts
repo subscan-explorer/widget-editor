@@ -1,4 +1,4 @@
-import { RegistryInterface } from '@sunmao-ui/runtime';
+import { RegistryInterface } from '@sunmao-ui-fork/runtime';
 import { AppModel } from '../AppModel/AppModel';
 
 export const leafSymbol = Symbol('leaf');

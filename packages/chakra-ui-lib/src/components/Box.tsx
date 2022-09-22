@@ -1,6 +1,6 @@
 import { Type } from '@sinclair/typebox';
 import { Box as BaseBox } from '@chakra-ui/react';
-import { implementRuntimeComponent } from '@sunmao-ui/runtime';
+import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
 import { pick } from 'lodash';
 import { css } from '@emotion/css';
 import { LAYOUT, BACKGROUND, BORDER } from './constants/category';

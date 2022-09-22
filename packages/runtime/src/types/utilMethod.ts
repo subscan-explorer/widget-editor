@@ -1,5 +1,5 @@
 import { UIServices } from './application';
-import { RuntimeUtilMethod } from '@sunmao-ui/core';
+import { RuntimeUtilMethod } from '@sunmao-ui-fork/core';
 
 export type UtilMethodImpl<T = any> = (parameters: T, services: UIServices) => void;
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ImplWrapperProps } from '../../../types';
-import { shallowCompare } from '@sunmao-ui/shared';
+import { shallowCompare } from '@sunmao-ui-fork/shared';
 import { UnmountImplWrapper } from './UnmountImplWrapper';
 
 export const ImplWrapper = React.memo<ImplWrapperProps>(

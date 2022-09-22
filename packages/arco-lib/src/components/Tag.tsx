@@ -1,5 +1,5 @@
 import { Tag as BaseTag } from '@arco-design/web-react';
-import { implementRuntimeComponent } from '@sunmao-ui/runtime';
+import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
 import { css } from '@emotion/css';
 import { Type, Static } from '@sinclair/typebox';
 import { FALLBACK_METADATA, getComponentProps } from '../sunmao-helper';

@@ -19,7 +19,7 @@ import mitt from 'mitt';
 import { SpecWidget } from './SpecWidget';
 import { implementWidget } from '../../utils/widget';
 import { WidgetProps } from '../../types/widget';
-import { CORE_VERSION, CoreWidgetName } from '@sunmao-ui/shared';
+import { CORE_VERSION, CoreWidgetName } from '@sunmao-ui-fork/shared';
 import { PREVENT_POPOVER_WIDGET_CLOSE_CLASS } from '../../constants/widget';
 
 type EvenType = {

@@ -14,7 +14,7 @@ import { observer } from 'mobx-react-lite';
 import { genOperation } from '../operations';
 import { AppModel } from '../AppModel/AppModel';
 import { EditorServices } from '../types';
-import { Application } from '@sunmao-ui/core';
+import { Application } from '@sunmao-ui-fork/core';
 import { CodeEditor } from './CodeEditor/CodeEditor';
 import { css } from '@emotion/css';
 

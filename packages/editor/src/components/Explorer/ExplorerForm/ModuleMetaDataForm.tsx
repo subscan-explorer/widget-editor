@@ -15,11 +15,11 @@ import {
   useDisclosure,
   VStack,
 } from '@chakra-ui/react';
-import { RecordEditor, SpecWidget } from '@sunmao-ui/editor-sdk';
+import { RecordEditor, SpecWidget } from '@sunmao-ui-fork/editor-sdk';
 import { useFormik } from 'formik';
 import { observer } from 'mobx-react-lite';
 import { EditorServices } from '../../../types';
-import { generateDefaultValueFromSpec } from '@sunmao-ui/shared';
+import { generateDefaultValueFromSpec } from '@sunmao-ui-fork/shared';
 import { JSONSchema7, JSONSchema7Object } from 'json-schema';
 
 const JsonSchemaEditor = React.lazy(() => import('@optum/json-schema-editor'));

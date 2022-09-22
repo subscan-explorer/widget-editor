@@ -1,11 +1,11 @@
 import React, { useCallback } from 'react';
 import { VStack, FormControl, FormLabel, Switch } from '@chakra-ui/react';
 import { FormikHelpers, FormikHandlers, FormikState } from 'formik';
-import { FetchTraitPropertiesSpec } from '@sunmao-ui/runtime';
+import { FetchTraitPropertiesSpec } from '@sunmao-ui-fork/runtime';
 import { Static, Type } from '@sinclair/typebox';
 import { EditorServices } from '../../../types';
-import { ComponentSchema } from '@sunmao-ui/core';
-import { SpecWidget, mergeWidgetOptionsIntoSpec } from '@sunmao-ui/editor-sdk';
+import { ComponentSchema } from '@sunmao-ui-fork/core';
+import { SpecWidget, mergeWidgetOptionsIntoSpec } from '@sunmao-ui-fork/editor-sdk';
 import { JSONSchema7 } from 'json-schema';
 
 type Values = Static<typeof FetchTraitPropertiesSpec>;

@@ -1,7 +1,7 @@
 import { Image as BaseImage } from '@chakra-ui/react';
 import { css } from '@emotion/css';
 import { Type } from '@sinclair/typebox';
-import { implementRuntimeComponent } from '@sunmao-ui/runtime';
+import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
 import { BASIC, LAYOUT, BEHAVIOR, APPEARANCE } from './constants/category';
 
 const BoxSizePropertySpec = Type.Union(

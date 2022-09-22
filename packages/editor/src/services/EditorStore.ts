@@ -1,6 +1,6 @@
 import { action, makeAutoObservable, observable, reaction, toJS } from 'mobx';
-import { ComponentSchema, createModule } from '@sunmao-ui/core';
-import { RegistryInterface, StateManagerInterface } from '@sunmao-ui/runtime';
+import { ComponentSchema, createModule } from '@sunmao-ui-fork/core';
+import { RegistryInterface, StateManagerInterface } from '@sunmao-ui-fork/runtime';
 
 import { EventBusType } from './eventBus';
 import { AppStorage } from './AppStorage';
@@ -13,11 +13,11 @@ import {
 import { genOperation } from '../operations';
 import { ExplorerMenuTabs, ToolMenuTabs } from '../constants/enum';
 
-import { CORE_VERSION, CoreComponentName } from '@sunmao-ui/shared';
+import { CORE_VERSION, CoreComponentName } from '@sunmao-ui-fork/shared';
 import { isEqual } from 'lodash';
 import { resolveApplicationComponents } from '../utils/resolveApplicationComponents';
 import { AppModelManager } from '../operations/AppModelManager';
-import type { Metadata } from '@sunmao-ui/core';
+import type { Metadata } from '@sunmao-ui-fork/core';
 
 type EditingTarget = {
   kind: 'app' | 'module';

@@ -1,6 +1,6 @@
-import { Application } from '@sunmao-ui/core';
-import { ImplementedRuntimeModule } from '@sunmao-ui/runtime';
-import { CORE_VERSION, CoreTraitName } from '@sunmao-ui/shared';
+import { Application } from '@sunmao-ui-fork/core';
+import { ImplementedRuntimeModule } from '@sunmao-ui-fork/runtime';
+import { CORE_VERSION, CoreTraitName } from '@sunmao-ui-fork/shared';
 
 export const unremovableTraits = [`${CORE_VERSION}/${CoreTraitName.Slot}`];
 

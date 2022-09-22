@@ -1,11 +1,11 @@
 import { Flex, Box, ChakraProvider, Button } from '@chakra-ui/react';
-import { Application } from '@sunmao-ui/core';
-import { RegistryInterface } from '@sunmao-ui/runtime';
+import { Application } from '@sunmao-ui-fork/core';
+import { RegistryInterface } from '@sunmao-ui-fork/runtime';
 import React, { StrictMode, useState } from 'react';
 import ReactDOM from 'react-dom';
 
 import { initSunmaoUIEditor } from './init';
-import { sunmaoChakraUILib } from '@sunmao-ui/chakra-ui-lib';
+import { sunmaoChakraUILib } from '@sunmao-ui-fork/chakra-ui-lib';
 
 type Example = {
   name: string;

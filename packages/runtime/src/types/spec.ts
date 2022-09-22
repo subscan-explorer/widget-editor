@@ -1,4 +1,4 @@
-import { Condition } from '@sunmao-ui/shared';
+import { Condition } from '@sunmao-ui-fork/shared';
 
 declare module '@sinclair/typebox' {
   export interface CustomOptions {

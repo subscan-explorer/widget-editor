@@ -1,4 +1,4 @@
-import { Application } from '@sunmao-ui/core';
+import { Application } from '@sunmao-ui-fork/core';
 import { RuntimeAppSchemaManager } from '../src/services/RuntimeAppSchemaManager';
 import { cloneDeep } from 'lodash';
 

@@ -9,7 +9,7 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { Type } from '@sinclair/typebox';
-import { implementRuntimeComponent } from '@sunmao-ui/runtime';
+import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
 import { BASIC } from './constants/category';
 
 const StateSpec = Type.Object({

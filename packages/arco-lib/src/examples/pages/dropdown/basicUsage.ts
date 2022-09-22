@@ -1,357 +1,361 @@
-import { Application } from '@sunmao-ui/core';
+import { Application } from '@sunmao-ui-fork/core';
 
 const basicUsage: Application = {
-  "version": "sunmao/v1",
-  "kind": "Application",
-  "metadata": {
-    "name": "some App"
+  version: 'sunmao/v1',
+  kind: 'Application',
+  metadata: {
+    name: 'some App',
   },
-  "spec": {
-    "components": [
+  spec: {
+    components: [
       {
-        "id": "api0",
-        "type": "core/v1/dummy",
-        "properties": {},
-        "traits": [
+        id: 'api0',
+        type: 'core/v1/dummy',
+        properties: {},
+        traits: [
           {
-            "type": "core/v1/fetch",
-            "properties": {
-              "url": "/test",
-              "method": "post",
-              "lazy": true,
-              "headers": {
-                "Content-Type": "application/json"
+            type: 'core/v1/fetch',
+            properties: {
+              url: '/test',
+              method: 'post',
+              lazy: true,
+              headers: {
+                'Content-Type': 'application/json',
               },
-              "body": "{{\ntrans({value:input4.value})\n}}",
-              "bodyType": "json",
-              "onComplete": [],
-              "onError": []
-            }
-          }
-        ]
+              body: '{{\ntrans({value:input4.value})\n}}',
+              bodyType: 'json',
+              onComplete: [],
+              onError: [],
+            },
+          },
+        ],
       },
       {
-        "id": "stack9",
-        "type": "core/v1/stack",
-        "properties": {
-          "spacing": 20,
-          "direction": "horizontal",
-          "align": "start",
-          "wrap": "",
-          "justify": ""
+        id: 'stack9',
+        type: 'core/v1/stack',
+        properties: {
+          spacing: 20,
+          direction: 'horizontal',
+          align: 'start',
+          wrap: '',
+          justify: '',
         },
-        "traits": []
+        traits: [],
       },
       {
-        "id": "dropdown6",
-        "type": "arco/v1/dropdown",
-        "properties": {
-          "dropdownType": "default",
-          "trigger": "hover",
-          "position": "bl",
-          "disabled": false,
-          "defaultPopupVisible": false,
-          "list": [
+        id: 'dropdown6',
+        type: 'arco/v1/dropdown',
+        properties: {
+          dropdownType: 'default',
+          trigger: 'hover',
+          position: 'bl',
+          disabled: false,
+          defaultPopupVisible: false,
+          list: [
             {
-              "key": "1",
-              "label": "smartx"
+              key: '1',
+              label: 'smartx',
             },
             {
-              "key": "2",
-              "label": "baidu"
+              key: '2',
+              label: 'baidu',
             },
             {
-              "key": "3",
-              "label": "tencent"
-            }
+              key: '3',
+              label: 'tencent',
+            },
           ],
-          "autoAlignPopupWidth": true
+          autoAlignPopupWidth: true,
         },
-        "traits": [
+        traits: [
           {
-            "type": "core/v1/slot",
-            "properties": {
-              "container": {
-                "id": "stack9",
-                "slot": "content"
-              }
-            }
-          }
-        ]
+            type: 'core/v1/slot',
+            properties: {
+              container: {
+                id: 'stack9',
+                slot: 'content',
+              },
+            },
+          },
+        ],
       },
       {
-        "id": "stack14",
-        "type": "core/v1/stack",
-        "properties": {
-          "spacing": 0,
-          "direction": "horizontal",
-          "align": "start",
-          "wrap": "",
-          "justify": ""
+        id: 'stack14',
+        type: 'core/v1/stack',
+        properties: {
+          spacing: 0,
+          direction: 'horizontal',
+          align: 'start',
+          wrap: '',
+          justify: '',
         },
-        "traits": [
+        traits: [
           {
-            "type": "core/v1/slot",
-            "properties": {
-              "container": {
-                "id": "dropdown6",
-                "slot": "trigger"
-              }
-            }
-          }
-        ]
+            type: 'core/v1/slot',
+            properties: {
+              container: {
+                id: 'dropdown6',
+                slot: 'trigger',
+              },
+            },
+          },
+        ],
       },
       {
-        "id": "button15",
-        "type": "arco/v1/button",
-        "properties": {
-          "type": "primary",
-          "status": "default",
-          "long": false,
-          "size": "default",
-          "disabled": false,
-          "loading": false,
-          "shape": "square",
-          "text": "hover me"
+        id: 'button15',
+        type: 'arco/v1/button',
+        properties: {
+          type: 'primary',
+          status: 'default',
+          long: false,
+          size: 'default',
+          disabled: false,
+          loading: false,
+          shape: 'square',
+          text: 'hover me',
         },
-        "traits": [
+        traits: [
           {
-            "type": "core/v1/slot",
-            "properties": {
-              "container": {
-                "id": "stack14",
-                "slot": "content"
-              }
-            }
+            type: 'core/v1/slot',
+            properties: {
+              container: {
+                id: 'stack14',
+                slot: 'content',
+              },
+            },
           },
           {
-            "type": "core/v1/event",
-            "properties": {
-              "handlers": []
-            }
+            type: 'core/v1/event',
+            properties: {
+              handlers: [],
+            },
           },
           {
-            "type": "core/v1/style",
-            "properties": {
-              "styles": [
+            type: 'core/v1/style',
+            properties: {
+              styles: [
                 {
-                  "styleSlot": "content",
-                  "style": "&&{\nbackground-color: transparent !important;\ncolor:rgb(22,93,255) !important;\n  padding-right:0px !important;\nbackground: transparent;\n}"
-                }
-              ]
-            }
-          }
-        ]
+                  styleSlot: 'content',
+                  style:
+                    '&&{\nbackground-color: transparent !important;\ncolor:rgb(22,93,255) !important;\n  padding-right:0px !important;\nbackground: transparent;\n}',
+                },
+              ],
+            },
+          },
+        ],
       },
       {
-        "id": "button10",
-        "type": "arco/v1/button",
-        "properties": {
-          "type": "primary",
-          "status": "default",
-          "long": false,
-          "size": "default",
-          "disabled": false,
-          "loading": false,
-          "shape": "square",
-          "text": ""
+        id: 'button10',
+        type: 'arco/v1/button',
+        properties: {
+          type: 'primary',
+          status: 'default',
+          long: false,
+          size: 'default',
+          disabled: false,
+          loading: false,
+          shape: 'square',
+          text: '',
         },
-        "traits": [
+        traits: [
           {
-            "type": "core/v1/slot",
-            "properties": {
-              "container": {
-                "id": "stack14",
-                "slot": "content"
-              }
-            }
+            type: 'core/v1/slot',
+            properties: {
+              container: {
+                id: 'stack14',
+                slot: 'content',
+              },
+            },
           },
           {
-            "type": "core/v1/style",
-            "properties": {
-              "styles": [
+            type: 'core/v1/style',
+            properties: {
+              styles: [
                 {
-                  "styleSlot": "content",
-                  "style": "&&{\nbackground-color: transparent !important;\n  padding-left:1px !important;\ncolor:rgb(22,93,255) !important;\nbackground: transparent;\n}"
-                }
-              ]
-            }
-          }
-        ]
+                  styleSlot: 'content',
+                  style:
+                    '&&{\nbackground-color: transparent !important;\n  padding-left:1px !important;\ncolor:rgb(22,93,255) !important;\nbackground: transparent;\n}',
+                },
+              ],
+            },
+          },
+        ],
       },
       {
-        "id": "icon16",
-        "type": "arco/v1/icon",
-        "properties": {
-          "name": "IconDown",
-          "spin": false
+        id: 'icon16',
+        type: 'arco/v1/icon',
+        properties: {
+          name: 'IconDown',
+          spin: false,
         },
-        "traits": [
+        traits: [
           {
-            "type": "core/v1/slot",
-            "properties": {
-              "container": {
-                "id": "button10",
-                "slot": "icon"
-              }
-            }
-          }
-        ]
+            type: 'core/v1/slot',
+            properties: {
+              container: {
+                id: 'button10',
+                slot: 'icon',
+              },
+            },
+          },
+        ],
       },
       {
-        "id": "dropdown3",
-        "type": "arco/v1/dropdown",
-        "properties": {
-          "dropdownType": "default",
-          "trigger": "click",
-          "position": "bl",
-          "disabled": false,
-          "defaultPopupVisible": false,
-          "list": [
+        id: 'dropdown3',
+        type: 'arco/v1/dropdown',
+        properties: {
+          dropdownType: 'default',
+          trigger: 'click',
+          position: 'bl',
+          disabled: false,
+          defaultPopupVisible: false,
+          list: [
             {
-              "key": "1",
-              "label": "sign in"
+              key: '1',
+              label: 'sign in',
             },
             {
-              "key": "2",
-              "label": "sign up"
-            }
+              key: '2',
+              label: 'sign up',
+            },
           ],
-          "autoAlignPopupWidth": true
+          autoAlignPopupWidth: true,
         },
-        "traits": [
+        traits: [
           {
-            "type": "core/v1/slot",
-            "properties": {
-              "container": {
-                "id": "stack9",
-                "slot": "content"
-              }
-            }
-          }
-        ]
+            type: 'core/v1/slot',
+            properties: {
+              container: {
+                id: 'stack9',
+                slot: 'content',
+              },
+            },
+          },
+        ],
       },
       {
-        "id": "stack14_copy5",
-        "type": "core/v1/stack",
-        "properties": {
-          "spacing": 0,
-          "direction": "horizontal",
-          "align": "start",
-          "wrap": "",
-          "justify": ""
+        id: 'stack14_copy5',
+        type: 'core/v1/stack',
+        properties: {
+          spacing: 0,
+          direction: 'horizontal',
+          align: 'start',
+          wrap: '',
+          justify: '',
         },
-        "traits": [
+        traits: [
           {
-            "type": "core/v1/slot",
-            "properties": {
-              "container": {
-                "id": "dropdown3",
-                "slot": "trigger"
-              }
-            }
-          }
-        ]
+            type: 'core/v1/slot',
+            properties: {
+              container: {
+                id: 'dropdown3',
+                slot: 'trigger',
+              },
+            },
+          },
+        ],
       },
       {
-        "id": "button15_copy5",
-        "type": "arco/v1/button",
-        "properties": {
-          "type": "primary",
-          "status": "default",
-          "long": false,
-          "size": "default",
-          "disabled": false,
-          "loading": false,
-          "shape": "square",
-          "text": "click me"
+        id: 'button15_copy5',
+        type: 'arco/v1/button',
+        properties: {
+          type: 'primary',
+          status: 'default',
+          long: false,
+          size: 'default',
+          disabled: false,
+          loading: false,
+          shape: 'square',
+          text: 'click me',
         },
-        "traits": [
+        traits: [
           {
-            "type": "core/v1/slot",
-            "properties": {
-              "container": {
-                "id": "stack14_copy5",
-                "slot": "content"
-              }
-            }
+            type: 'core/v1/slot',
+            properties: {
+              container: {
+                id: 'stack14_copy5',
+                slot: 'content',
+              },
+            },
           },
           {
-            "type": "core/v1/event",
-            "properties": {
-              "handlers": []
-            }
+            type: 'core/v1/event',
+            properties: {
+              handlers: [],
+            },
           },
           {
-            "type": "core/v1/style",
-            "properties": {
-              "styles": [
+            type: 'core/v1/style',
+            properties: {
+              styles: [
                 {
-                  "styleSlot": "content",
-                  "style": "&&{\nbackground-color: transparent !important;\ncolor:rgb(22,93,255) !important;\n  padding-right:0px !important;\nbackground: transparent;\n}"
-                }
-              ]
-            }
-          }
-        ]
+                  styleSlot: 'content',
+                  style:
+                    '&&{\nbackground-color: transparent !important;\ncolor:rgb(22,93,255) !important;\n  padding-right:0px !important;\nbackground: transparent;\n}',
+                },
+              ],
+            },
+          },
+        ],
       },
       {
-        "id": "button10_copy5",
-        "type": "arco/v1/button",
-        "properties": {
-          "type": "primary",
-          "status": "default",
-          "long": false,
-          "size": "default",
-          "disabled": false,
-          "loading": false,
-          "shape": "square",
-          "text": ""
+        id: 'button10_copy5',
+        type: 'arco/v1/button',
+        properties: {
+          type: 'primary',
+          status: 'default',
+          long: false,
+          size: 'default',
+          disabled: false,
+          loading: false,
+          shape: 'square',
+          text: '',
         },
-        "traits": [
+        traits: [
           {
-            "type": "core/v1/slot",
-            "properties": {
-              "container": {
-                "id": "stack14_copy5",
-                "slot": "content"
-              }
-            }
+            type: 'core/v1/slot',
+            properties: {
+              container: {
+                id: 'stack14_copy5',
+                slot: 'content',
+              },
+            },
           },
           {
-            "type": "core/v1/style",
-            "properties": {
-              "styles": [
+            type: 'core/v1/style',
+            properties: {
+              styles: [
                 {
-                  "styleSlot": "content",
-                  "style": "&&{\nbackground-color: transparent !important;\n  padding-left:1px !important;\ncolor:rgb(22,93,255) !important;\nbackground: transparent;\n}"
-                }
-              ]
-            }
-          }
-        ]
+                  styleSlot: 'content',
+                  style:
+                    '&&{\nbackground-color: transparent !important;\n  padding-left:1px !important;\ncolor:rgb(22,93,255) !important;\nbackground: transparent;\n}',
+                },
+              ],
+            },
+          },
+        ],
       },
       {
-        "id": "icon16_copy5",
-        "type": "arco/v1/icon",
-        "properties": {
-          "name": "IconDown",
-          "spin": false
+        id: 'icon16_copy5',
+        type: 'arco/v1/icon',
+        properties: {
+          name: 'IconDown',
+          spin: false,
         },
-        "traits": [
+        traits: [
           {
-            "type": "core/v1/slot",
-            "properties": {
-              "container": {
-                "id": "button10_copy5",
-                "slot": "icon"
-              }
-            }
-          }
-        ]
-      }
-    ]
-  }
-}
+            type: 'core/v1/slot',
+            properties: {
+              container: {
+                id: 'button10_copy5',
+                slot: 'icon',
+              },
+            },
+          },
+        ],
+      },
+    ],
+  },
+};
 
 export default basicUsage;

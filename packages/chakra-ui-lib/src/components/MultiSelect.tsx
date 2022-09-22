@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Static, Type } from '@sinclair/typebox';
 import { Select as BaseMultiSelect } from 'chakra-react-select';
-import { implementRuntimeComponent } from '@sunmao-ui/runtime';
+import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
 import { Box } from '@chakra-ui/react';
 import { css } from '@emotion/css';
 import { BASIC, BEHAVIOR, APPEARANCE } from './constants/category';

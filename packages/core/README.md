@@ -1,11 +1,11 @@
-# `@sunmao-ui/core`
+# `@sunmao-ui-fork/core`
 
 > TODO: description
 
 ## Usage
 
 ```
-const core = require('@sunmao-ui/core');
+const core = require('@sunmao-ui-fork/core');
 
 // TODO: DEMONSTRATE API
 ```

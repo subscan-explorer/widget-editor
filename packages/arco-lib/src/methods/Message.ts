@@ -1,7 +1,7 @@
-import { implementUtilMethod } from '@sunmao-ui/runtime';
+import { implementUtilMethod } from '@sunmao-ui-fork/runtime';
 import { Type } from '@sinclair/typebox';
 import { Message as BaseMessage } from '@arco-design/web-react';
-import { StringUnion } from '@sunmao-ui/shared';
+import { StringUnion } from '@sunmao-ui-fork/shared';
 
 const ParameterSpec = Type.Object({
   type: StringUnion(['info', 'success', 'warning', 'error', 'normal', 'loading'], {

@@ -1,6 +1,6 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { Type } from '@sinclair/typebox';
-import { implementRuntimeComponent } from '@sunmao-ui/runtime';
+import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
 import '../CSSReset.css';
 
 export default implementRuntimeComponent({

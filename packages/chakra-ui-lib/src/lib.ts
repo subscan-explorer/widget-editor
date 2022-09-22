@@ -1,4 +1,4 @@
-import { SunmaoLib } from '@sunmao-ui/runtime';
+import { SunmaoLib } from '@sunmao-ui-fork/runtime';
 import ChakraUIRoot from './components/Root';
 import ChakraUIButton from './components/Button';
 import ChakraUITabs from './components/Tabs';

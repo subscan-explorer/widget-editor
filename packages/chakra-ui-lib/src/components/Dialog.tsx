@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { implementRuntimeComponent, DIALOG_CONTAINER_ID } from '@sunmao-ui/runtime';
+import { implementRuntimeComponent, DIALOG_CONTAINER_ID } from '@sunmao-ui-fork/runtime';
 import {
   AlertDialog,
   AlertDialogBody,

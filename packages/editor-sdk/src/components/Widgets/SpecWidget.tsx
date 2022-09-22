@@ -15,7 +15,7 @@ import {
 import { isEmpty } from 'lodash';
 import { Type, Static } from '@sinclair/typebox';
 import { css } from '@emotion/css';
-import { CORE_VERSION, CoreWidgetName } from '@sunmao-ui/shared';
+import { CORE_VERSION, CoreWidgetName } from '@sunmao-ui-fork/shared';
 import { isExpression as _isExpression } from '../../utils/validator';
 import { WidgetProps } from '../../types/widget';
 import {

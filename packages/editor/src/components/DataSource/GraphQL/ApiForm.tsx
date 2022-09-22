@@ -1,15 +1,15 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { ComponentSchema } from '@sunmao-ui/core';
+import { ComponentSchema } from '@sunmao-ui-fork/core';
 import { VStack, CloseButton, FormLabel, FormControl, Stack } from '@chakra-ui/react';
 import { Static, Type } from '@sinclair/typebox';
 import { EditorServices } from '../../../types';
 import GraphiQL from '../../../graphiql';
 import { css, cx } from '@emotion/css';
-import { CORE_VERSION, CoreTraitName } from '@sunmao-ui/shared';
+import { CORE_VERSION, CoreTraitName } from '@sunmao-ui-fork/shared';
 import { genOperation } from '../../../operations';
 import { createGraphiQLFetcher } from '@graphiql/toolkit';
-import { GraphQLTraitPropertiesSpec } from '@sunmao-ui/runtime';
-import { ExpressionWidget } from '@sunmao-ui/editor-sdk';
+import { GraphQLTraitPropertiesSpec } from '@sunmao-ui-fork/runtime';
+import { ExpressionWidget } from '@sunmao-ui-fork/editor-sdk';
 
 const CssResetStyle = css`
   & .graphiql-container * {

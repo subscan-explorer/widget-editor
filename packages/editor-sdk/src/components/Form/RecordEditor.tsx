@@ -10,7 +10,7 @@ import { ExpressionEditor } from '../Form/ExpressionEditor';
 import { WidgetProps } from '../../types/widget';
 import { mergeWidgetOptionsIntoSpec } from '../../utils/widget';
 import { ExpressionEditorProps } from './ExpressionEditor';
-import { generateDefaultValueFromSpec } from '@sunmao-ui/shared';
+import { generateDefaultValueFromSpec } from '@sunmao-ui-fork/shared';
 import { JSONSchema7 } from 'json-schema';
 
 const IGNORE_SPEC_TYPES = ['array', 'object'];

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { css } from '@emotion/css';
 import { Type } from '@sinclair/typebox';
 import { Button, VStack } from '@chakra-ui/react';
-import { implementRuntimeComponent, watch } from '@sunmao-ui/runtime';
+import { implementRuntimeComponent, watch } from '@sunmao-ui-fork/runtime';
 import { BEHAVIOR } from '../constants/category';
 
 const PropsSpec = Type.Object({

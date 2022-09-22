@@ -1,7 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import { Static, Type } from '@sinclair/typebox';
 import { Checkbox as BaseCheckbox, useCheckboxGroupContext } from '@chakra-ui/react';
-import { implementRuntimeComponent, Text, TextPropertySpec } from '@sunmao-ui/runtime';
+import {
+  implementRuntimeComponent,
+  Text,
+  TextPropertySpec,
+} from '@sunmao-ui-fork/runtime';
 import { getColorSchemePropertySpec } from './Types/ColorScheme';
 import { css } from '@emotion/css';
 import { BASIC, BEHAVIOR, LAYOUT, APPEARANCE } from './constants/category';

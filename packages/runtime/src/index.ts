@@ -97,7 +97,7 @@ export {
   // utils
   StringUnion,
   generateDefaultValueFromSpec,
-} from '@sunmao-ui/shared';
+} from '@sunmao-ui-fork/shared';
 export { formatSlotKey } from './components/_internal/ImplWrapper/hooks/useSlotChildren';
 
 // TODO: check this export

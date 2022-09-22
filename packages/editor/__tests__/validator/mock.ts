@@ -1,4 +1,4 @@
-import { ComponentSchema } from '@sunmao-ui/core';
+import { ComponentSchema } from '@sunmao-ui-fork/core';
 
 export const OrphanComponentSchema: ComponentSchema[] = [
   {

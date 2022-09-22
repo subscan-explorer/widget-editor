@@ -3,7 +3,7 @@ import {
   ExpressionKeywords,
   generateDefaultValueFromSpec,
   AnyTypePlaceholder,
-} from '@sunmao-ui/shared';
+} from '@sunmao-ui-fork/shared';
 import { ComponentId, ModuleId } from '../../AppModel/IAppModel';
 import {
   PropertiesValidatorRule,

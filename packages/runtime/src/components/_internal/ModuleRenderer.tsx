@@ -8,11 +8,11 @@ import {
   RuntimeApplication,
   RuntimeComponentSchema,
   PropsAfterEvaled,
-} from '@sunmao-ui/core';
+} from '@sunmao-ui-fork/core';
 import { ImplWrapper } from './ImplWrapper';
 import { watch } from '../../utils/watchReactivity';
 import { ImplementedRuntimeModule, UIServices } from '../../types';
-import { EventHandlerSpec, ModuleRenderSpec } from '@sunmao-ui/shared';
+import { EventHandlerSpec, ModuleRenderSpec } from '@sunmao-ui-fork/shared';
 import { resolveChildrenMap } from '../../utils/resolveChildrenMap';
 import { initStateAndMethod } from '../../utils/initStateAndMethod';
 import { ExpressionError } from '../../services/StateManager';

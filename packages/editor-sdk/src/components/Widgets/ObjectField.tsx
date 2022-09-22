@@ -5,7 +5,7 @@ import { WidgetProps } from '../../types/widget';
 import { ExpressionWidgetOptionsSpec } from './ExpressionWidget';
 import { implementWidget, mergeWidgetOptionsIntoSpec } from '../../utils/widget';
 import { shouldRender } from '../../utils/condition';
-import { CORE_VERSION, CoreWidgetName } from '@sunmao-ui/shared';
+import { CORE_VERSION, CoreWidgetName } from '@sunmao-ui-fork/shared';
 import { VStack } from '@chakra-ui/react';
 
 const ObjectFieldWidgetOptions = Type.Object({

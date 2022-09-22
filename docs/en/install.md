@@ -11,7 +11,7 @@ No matter whether you choose runtime or editor, you need to install react, becau
 #### Install Sunmao runtime
 
 ````
-yarn add @sunmao-ui/runtime
+yarn add @sunmao-ui-fork/runtime
 yarn add react
 yarn add react-dom
 ````
@@ -19,7 +19,7 @@ yarn add react-dom
 #### Install Sunmao editor
 
 ````
-yarn add @sunmao-ui/editor
+yarn add @sunmao-ui-fork/editor
 yarn add react
 yarn add react-dom
 ````
@@ -31,7 +31,7 @@ The runtime and editor are started in roughly the same way, but with different m
 #### Start Sunmao runtime
 
 ````
-import { initSunmaoUI } from "@sunmao-ui/runtime";
+import { initSunmaoUI } from "@sunmao-ui-fork/runtime";
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -43,7 +43,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 #### Start Sunmao editor
 
 ````
-import { initSunmaoUIEditor } from "@sunmao-ui/editor";
+import { initSunmaoUIEditor } from "@sunmao-ui-fork/editor";
 import React from "react";
 import ReactDOM from "react-dom";
 

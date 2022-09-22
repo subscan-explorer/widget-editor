@@ -1,7 +1,7 @@
 import { Type } from '@sinclair/typebox';
 import { Category } from '../../constants/category';
 import { StringUnion } from '../../sunmao-helper';
-import { CoreWidgetName, CORE_VERSION } from '@sunmao-ui/shared';
+import { CoreWidgetName, CORE_VERSION } from '@sunmao-ui-fork/shared';
 
 const DisabledDateSpec = {
   disabledType: StringUnion(['before', 'after', 'range'], {

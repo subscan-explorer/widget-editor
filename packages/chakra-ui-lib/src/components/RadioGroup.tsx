@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Type } from '@sinclair/typebox';
 import { RadioGroup as BaseRadioGroup } from '@chakra-ui/react';
-import { implementRuntimeComponent } from '@sunmao-ui/runtime';
+import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
 import { css } from '@emotion/css';
 import { BASIC, BEHAVIOR } from './constants/category';
 

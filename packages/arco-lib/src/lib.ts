@@ -1,4 +1,4 @@
-import { SunmaoLib } from '@sunmao-ui/runtime';
+import { SunmaoLib } from '@sunmao-ui-fork/runtime';
 import { Button } from './components/Button';
 import { Layout } from './components/Layout';
 import { Image, ImageGroup } from './components/Image';

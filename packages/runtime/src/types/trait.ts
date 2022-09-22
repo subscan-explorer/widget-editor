@@ -1,4 +1,4 @@
-import { RuntimeTrait, RuntimeTraitSchema } from '@sunmao-ui/core';
+import { RuntimeTrait, RuntimeTraitSchema } from '@sunmao-ui-fork/core';
 import { UIServices } from './application';
 import { RuntimeFunctions } from './component';
 

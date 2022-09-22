@@ -1,5 +1,5 @@
-import { RuntimeComponent, SlotSpec } from '@sunmao-ui/core';
-import { RegistryInterface } from '@sunmao-ui/runtime';
+import { RuntimeComponent, SlotSpec } from '@sunmao-ui-fork/core';
+import { RegistryInterface } from '@sunmao-ui-fork/runtime';
 import Ajv from 'ajv';
 import { PropertiesValidatorRule } from '.';
 import { IAppModel } from '../AppModel/IAppModel';

@@ -4,10 +4,10 @@ import {
   TraitValidateContext,
   ValidateErrorResult,
 } from '../interfaces';
-import { GLOBAL_UTIL_METHOD_ID } from '@sunmao-ui/runtime';
+import { GLOBAL_UTIL_METHOD_ID } from '@sunmao-ui-fork/runtime';
 import { isExpression } from '../utils';
 import { ComponentId, EventName } from '../../AppModel/IAppModel';
-import { CORE_VERSION, CoreTraitName, EventHandlerSpec } from '@sunmao-ui/shared';
+import { CORE_VERSION, CoreTraitName, EventHandlerSpec } from '@sunmao-ui-fork/shared';
 import { get } from 'lodash';
 import { ErrorObject } from 'ajv';
 

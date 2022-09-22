@@ -1,6 +1,6 @@
-import { EQ, NOT, GT, LT, GTE, LTE, AND, OR } from '@sunmao-ui/shared';
+import { EQ, NOT, GT, LT, GTE, LTE, AND, OR } from '@sunmao-ui-fork/shared';
 import { shouldRender } from '../src/utils/condition';
-import type { Condition } from '@sunmao-ui/shared';
+import type { Condition } from '@sunmao-ui-fork/shared';
 
 describe('conditional render', () => {
   it('equal condition', () => {

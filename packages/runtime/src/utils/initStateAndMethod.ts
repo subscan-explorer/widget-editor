@@ -1,4 +1,4 @@
-import { RuntimeComponentSchema } from '@sunmao-ui/core';
+import { RuntimeComponentSchema } from '@sunmao-ui-fork/core';
 import { Static } from '@sinclair/typebox';
 import { RegistryInterface } from '../services/Registry';
 import { StateManagerInterface } from '../services/StateManager';
@@ -7,7 +7,7 @@ import {
   generateDefaultValueFromSpec,
   CORE_VERSION,
   CoreComponentName,
-} from '@sunmao-ui/shared';
+} from '@sunmao-ui-fork/shared';
 import { JSONSchema7Object } from 'json-schema';
 
 export function initStateAndMethod(

@@ -1,4 +1,4 @@
-import { RegistryInterface } from '@sunmao-ui/runtime';
+import { RegistryInterface } from '@sunmao-ui-fork/runtime';
 import {
   CreateComponentBranchOperation,
   CreateComponentBranchOperationContext,

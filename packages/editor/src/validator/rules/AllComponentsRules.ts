@@ -3,14 +3,12 @@ import {
   AllComponentsValidateContext,
   ValidateErrorResult,
 } from '../interfaces';
-import { CORE_VERSION, CoreTraitName } from '@sunmao-ui/shared';
+import { CORE_VERSION, CoreTraitName } from '@sunmao-ui-fork/shared';
 
 class ParentValidatorRule implements AllComponentsValidatorRule {
   kind: 'allComponents' = 'allComponents';
 
-  validate({
-    appModel,
-  }: AllComponentsValidateContext): ValidateErrorResult[] {
+  validate({ appModel }: AllComponentsValidateContext): ValidateErrorResult[] {
     const results: ValidateErrorResult[] = [];
     const allComponents = appModel.allComponents;
     const allComponentsFromSchema = appModel.allComponentsWithOrphan;
@@ -18,8 +16,10 @@ class ParentValidatorRule implements AllComponentsValidatorRule {
       return results;
     }
 
-    const orphanComponents = allComponentsFromSchema.filter(c => !allComponents.find(c2 => c2.id === c.id));
-  
+    const orphanComponents = allComponentsFromSchema.filter(
+      c => !allComponents.find(c2 => c2.id === c.id)
+    );
+
     orphanComponents.forEach(c => {
       const parent = appModel.getComponentById(c.parentId!);
       if (!parent) {

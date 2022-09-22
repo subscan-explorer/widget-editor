@@ -1,12 +1,12 @@
 import { Editor as _Editor } from './components/Editor';
-import { initSunmaoUI, SunmaoUIRuntimeProps } from '@sunmao-ui/runtime';
+import { initSunmaoUI, SunmaoUIRuntimeProps } from '@sunmao-ui-fork/runtime';
 import { AppModelManager } from './operations/AppModelManager';
 import React, { useState, useCallback, useEffect } from 'react';
 import {
   widgets as internalWidgets,
   WidgetManager,
   ImplementedWidget,
-} from '@sunmao-ui/editor-sdk';
+} from '@sunmao-ui-fork/editor-sdk';
 import {
   ChakraProvider,
   extendTheme,
@@ -17,7 +17,7 @@ import { initEventBus } from './services/eventBus';
 import { EditorStore } from './services/EditorStore';
 import { StorageHandler } from './types';
 import { AppStorage } from './services/AppStorage';
-import { Application, Module } from '@sunmao-ui/core';
+import { Application, Module } from '@sunmao-ui-fork/core';
 import './styles.css';
 import './CSSReset.css';
 

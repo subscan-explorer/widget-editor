@@ -7,8 +7,13 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 import LocalizedFormat from 'dayjs/plugin/localizedFormat';
 import { isProxy, reactive, toRaw } from '@vue/reactivity';
 import { watch } from '../utils/watchReactivity';
-import { parseExpression, consoleError, ConsoleType, ExpChunk } from '@sunmao-ui/shared';
-import { type PropsAfterEvaled } from '@sunmao-ui/core';
+import {
+  parseExpression,
+  consoleError,
+  ConsoleType,
+  ExpChunk,
+} from '@sunmao-ui-fork/shared';
+import { type PropsAfterEvaled } from '@sunmao-ui-fork/core';
 
 dayjs.extend(relativeTime);
 dayjs.extend(isLeapYear);

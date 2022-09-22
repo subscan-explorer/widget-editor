@@ -2,7 +2,7 @@ import { Type } from '@sinclair/typebox';
 import { css } from '@emotion/css';
 import { implementRuntimeComponent } from '../../utils/buildKit';
 import React, { useEffect, useRef } from 'react';
-import { CORE_VERSION } from '@sunmao-ui/shared';
+import { CORE_VERSION } from '@sunmao-ui-fork/shared';
 
 const PropsSpec = Type.Object({
   multiple: Type.Boolean({

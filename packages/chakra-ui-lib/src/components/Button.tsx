@@ -2,7 +2,11 @@ import { useEffect, useRef } from 'react';
 import { css } from '@emotion/css';
 import { Type } from '@sinclair/typebox';
 import { Button as BaseButton } from '@chakra-ui/react';
-import { Text, TextPropertySpec, implementRuntimeComponent } from '@sunmao-ui/runtime';
+import {
+  Text,
+  TextPropertySpec,
+  implementRuntimeComponent,
+} from '@sunmao-ui-fork/runtime';
 import { getColorSchemePropertySpec } from './Types/ColorScheme';
 import { BEHAVIOR, APPEARANCE } from './constants/category';
 

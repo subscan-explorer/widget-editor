@@ -1,5 +1,5 @@
 import mitt from 'mitt';
-import { ComponentSchema } from '@sunmao-ui/core';
+import { ComponentSchema } from '@sunmao-ui-fork/core';
 import { IOperation } from '../operations/type';
 
 export type EventNames = {

@@ -17,8 +17,8 @@ import { ExpressionEditor, ExpressionEditorHandle } from '../Form';
 import { isExpression } from '../../utils/validator';
 import { getTypeString } from '../../utils/type';
 import { ValidateFunction, EnumParams } from 'ajv';
-import { ExpressionError } from '@sunmao-ui/runtime';
-import { CORE_VERSION, CoreWidgetName } from '@sunmao-ui/shared';
+import { ExpressionError } from '@sunmao-ui-fork/runtime';
+import { CORE_VERSION, CoreWidgetName } from '@sunmao-ui-fork/shared';
 
 // FIXME: move into a new package and share with runtime?
 export function isNumeric(x: string | number) {
