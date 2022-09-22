@@ -1,6 +1,13 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import { ComponentSchema } from '@sunmao-ui-fork/core';
-import { VStack, CloseButton, FormLabel, FormControl, Stack } from '@chakra-ui/react';
+import {
+  VStack,
+  CloseButton,
+  FormLabel,
+  FormControl,
+  Stack,
+  Box,
+} from '@chakra-ui/react';
 import { Static, Type } from '@sinclair/typebox';
 import { EditorServices } from '../../../types';
 import GraphiQL from '../../../graphiql';
@@ -116,34 +123,38 @@ export const GraphQL: React.FC<Props> = props => {
       align="stretch"
     >
       <Stack p="10px">
-        <FormControl display="flex" justifyContent="center" alignItems="center">
+        <FormControl display="flex" alignItems="center">
           <FormLabel margin="0" marginRight="2">
             URL:
           </FormLabel>
-          <ExpressionWidget
-            component={api}
-            spec={URLSpec}
-            value={url}
-            path={EMPTY_ARRAY}
-            level={1}
-            services={services}
-            onChange={onURLChange}
-          />
+          <Box flex={1}>
+            <ExpressionWidget
+              component={api}
+              spec={URLSpec}
+              value={url}
+              path={EMPTY_ARRAY}
+              level={1}
+              services={services}
+              onChange={onURLChange}
+            />
+          </Box>
         </FormControl>
 
-        <FormControl display="flex" justifyContent="center" alignItems="center">
+        <FormControl display="flex" alignItems="center">
           <FormLabel margin="0" marginRight="2">
             Variables:
           </FormLabel>
-          <ExpressionWidget
-            component={api}
-            spec={VariablesSpec}
-            value={variables}
-            path={EMPTY_ARRAY}
-            level={1}
-            services={services}
-            onChange={onVariablesChange}
-          />
+          <Box flex={1}>
+            <ExpressionWidget
+              component={api}
+              spec={VariablesSpec}
+              value={variables}
+              path={EMPTY_ARRAY}
+              level={1}
+              services={services}
+              onChange={onVariablesChange}
+            />
+          </Box>
         </FormControl>
       </Stack>
 
