@@ -17,7 +17,7 @@
     "lib"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm,iife --legacy-output --clean --sourcemap --platform browser",
+    "build": "tsup src/index.ts --target es5 --format cjs,esm,iife --legacy-output --clean --sourcemap --platform browser",
     "dev": "tsup src/index.ts --watch --format cjs,esm,iife --legacy-output --clean --sourcemap --platform browser",
     "typings": "tsc --emitDeclarationOnly",
     "prepublish": "npm run build && npm run typings",

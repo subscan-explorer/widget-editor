@@ -10,4 +10,5 @@ export default defineConfig({
   dts: false,
   metafile: true,
   platform: 'browser',
+  target: 'es5',
 });

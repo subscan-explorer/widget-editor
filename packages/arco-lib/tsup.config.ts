@@ -8,4 +8,5 @@ export default defineConfig({
   clean: true,
   metafile: true,
   platform: 'browser',
+  target: 'es5',
 });
