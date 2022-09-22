@@ -66,7 +66,7 @@ const Playground: React.FC<{ examples: Example[] }> = ({ examples }) => {
 export default function renderPlayground(examples: Example[]) {
   ReactDOM.render(
     <StrictMode>
-      <ChakraProvider>
+      <ChakraProvider resetCSS={false}>
         <Playground examples={examples} />
       </ChakraProvider>
     </StrictMode>,

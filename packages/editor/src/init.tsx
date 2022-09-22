@@ -19,6 +19,7 @@ import { StorageHandler } from './types';
 import { AppStorage } from './services/AppStorage';
 import { Application, Module } from '@sunmao-ui/core';
 import './styles.css';
+import './CSSReset.css';
 
 type SunmaoUIEditorProps = {
   widgets?: ImplementedWidget<any>[];
@@ -123,7 +124,7 @@ export function initSunmaoUIEditor(props: SunmaoUIEditorProps = {}) {
       };
     }, [onRefresh]);
     return (
-      <ChakraProvider theme={editorTheme}>
+      <ChakraProvider theme={editorTheme} resetCSS={false}>
         <_Editor
           App={App}
           eleMap={ui.eleMap}

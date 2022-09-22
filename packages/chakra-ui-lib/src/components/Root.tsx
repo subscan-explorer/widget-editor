@@ -1,6 +1,7 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { Type } from '@sinclair/typebox';
 import { implementRuntimeComponent } from '@sunmao-ui/runtime';
+import '../CSSReset.css';
 
 export default implementRuntimeComponent({
   version: 'chakra_ui/v1',
@@ -27,13 +28,18 @@ export default implementRuntimeComponent({
   },
 })(({ slotsElements, elementRef }) => {
   return (
-    <ChakraProvider
-      theme={extendTheme({
-        initialColorMode: 'dark',
-        useSystemColorMode: false,
-      })}
-    >
-      <div ref={elementRef}>{slotsElements.root ? slotsElements.root({}) : null}</div>
-    </ChakraProvider>
+    <div>
+      <ChakraProvider
+        resetCSS={false}
+        theme={extendTheme({
+          initialColorMode: 'dark',
+          useSystemColorMode: false,
+        })}
+      >
+        <div className="chakraCSSReset" ref={elementRef}>
+          {slotsElements.root ? slotsElements.root({}) : null}
+        </div>
+      </ChakraProvider>
+    </div>
   );
 });
