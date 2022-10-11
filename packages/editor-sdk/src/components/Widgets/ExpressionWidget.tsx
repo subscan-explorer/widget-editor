@@ -152,6 +152,8 @@ declare module '../../types/widget' {
 
 export const ExpressionWidget: React.FC<WidgetProps<ExpressionWidgetType>> = props => {
   const { value, services, spec, onChange } = props;
+  // eslint-disable-next-line no-debugger
+  debugger;
   const { widgetOptions } = spec;
   const { stateManager } = services;
   const code = useMemo(() => getCode(value), [value]);
@@ -210,6 +212,7 @@ export const ExpressionWidget: React.FC<WidgetProps<ExpressionWidgetType>> = pro
         });
         setError(null);
       } catch (err) {
+        console.log('setError', err);
         setError(String(err));
       }
     },
