@@ -152,8 +152,6 @@ declare module '../../types/widget' {
 
 export const ExpressionWidget: React.FC<WidgetProps<ExpressionWidgetType>> = props => {
   const { value, services, spec, onChange } = props;
-  // eslint-disable-next-line no-debugger
-  debugger;
   const { widgetOptions } = spec;
   const { stateManager } = services;
   const code = useMemo(() => getCode(value), [value]);
@@ -168,49 +166,53 @@ export const ExpressionWidget: React.FC<WidgetProps<ExpressionWidgetType>> = pro
 
   const evalCode = useCallback(
     async (code: string) => {
-      // try {
-      const value = getParsedValue(code, type);
-      const result = isExpression(value) ? services.stateManager.deepEval(value) : value;
+      try {
+        const value = getParsedValue(code, type);
+        const result = isExpression(value)
+          ? services.stateManager.deepEval(value)
+          : value;
 
-      if (result instanceof ExpressionError) {
-        throw result;
-      }
-
-      if (!validateFuncRef.current) {
-        const { default: Ajv } = await import('ajv');
-
-        const ajv = new Ajv();
-        validateFuncRef.current = ajv.compile(spec);
-      }
-
-      validateFuncRef.current(result);
-
-      if (validateFuncRef.current.errors?.length) {
-        const err = validateFuncRef.current.errors[0];
-
-        if (err.keyword === 'type') {
-          throw new TypeError(
-            `Invalid value, expected ${spec.type} but got ${getTypeString(
-              result
-            ).toLowerCase()}`
-          );
-        } else if (err.keyword === 'enum') {
-          throw new TypeError(
-            `${err.message}: ${JSON.stringify((err.params as EnumParams).allowedValues)}`
-          );
-        } else {
-          throw new TypeError(err.message);
+        if (result instanceof ExpressionError) {
+          throw result;
         }
-      }
 
-      setEvaledValue({
-        value: result,
-      });
-      setError(null);
-      // } catch (err) {
-      //   console.log('setError', err);
-      //   setError(String(err));
-      // }
+        if (!validateFuncRef.current) {
+          const { default: Ajv } = await import('ajv');
+
+          const ajv = new Ajv();
+          validateFuncRef.current = ajv.compile(spec);
+        }
+
+        validateFuncRef.current(result);
+
+        if (validateFuncRef.current.errors?.length) {
+          const err = validateFuncRef.current.errors[0];
+
+          if (err.keyword === 'type') {
+            throw new TypeError(
+              `Invalid value, expected ${spec.type} but got ${getTypeString(
+                result
+              ).toLowerCase()}`
+            );
+          } else if (err.keyword === 'enum') {
+            throw new TypeError(
+              `${err.message}: ${JSON.stringify(
+                (err.params as EnumParams).allowedValues
+              )}`
+            );
+          } else {
+            throw new TypeError(err.message);
+          }
+        }
+
+        setEvaledValue({
+          value: result,
+        });
+        setError(null);
+      } catch (err) {
+        console.log('expressionWidget error', err);
+        setError(String(err));
+      }
     },
     [services, type, spec]
   );
