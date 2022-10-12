@@ -2,14 +2,14 @@ import { JSONSchema7 } from 'json-schema';
 import { parseType, SlotSpec } from '@sunmao-ui-fork/core';
 // components
 /* --- core --- */
-import CoreText from '../components/core/Text';
-import CoreRouter from '../components/core/Router';
-import CoreDummy from '../components/core/Dummy';
-import CoreModuleContainer from '../components/core/ModuleContainer';
-import CoreStack from '../components/core/Stack';
-import CoreFileInput from '../components/core/FileInput';
-import CoreList from '../components/core/List';
-import CoreIframe from '../components/core/Iframe';
+// import CoreText from '../components/core/Text';
+// import CoreRouter from '../components/core/Router';
+// import CoreDummy from '../components/core/Dummy';
+// import CoreModuleContainer from '../components/core/ModuleContainer';
+// import CoreStack from '../components/core/Stack';
+// import CoreFileInput from '../components/core/FileInput';
+// import CoreList from '../components/core/List';
+// import CoreIframe from '../components/core/Iframe';
 
 // traits
 import CoreArrayState from '../traits/core/ArrayState';
@@ -247,14 +247,14 @@ export function initRegistry(
   utilMethodManager: UtilMethodManager
 ): Registry {
   const registry = new Registry(services, utilMethodManager);
-  registry.registerComponent(CoreText);
-  registry.registerComponent(CoreRouter);
-  registry.registerComponent(CoreDummy);
-  registry.registerComponent(CoreModuleContainer);
-  registry.registerComponent(CoreStack);
-  registry.registerComponent(CoreFileInput);
-  registry.registerComponent(CoreList);
-  registry.registerComponent(CoreIframe);
+  // registry.registerComponent(CoreText);
+  // registry.registerComponent(CoreRouter);
+  // registry.registerComponent(CoreDummy);
+  // registry.registerComponent(CoreModuleContainer);
+  // registry.registerComponent(CoreStack);
+  // registry.registerComponent(CoreFileInput);
+  // registry.registerComponent(CoreList);
+  // registry.registerComponent(CoreIframe);
 
   registry.registerTrait(CoreState);
   registry.registerTrait(CoreArrayState);
