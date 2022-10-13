@@ -36,7 +36,8 @@ export function initSunmaoUI(props: SunmaoUIRuntimeProps = {}) {
       eleMap,
       slotReceiver,
     },
-    utilMethodManager
+    utilMethodManager,
+    false
   );
 
   props.libs?.forEach(lib => {
