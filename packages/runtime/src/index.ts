@@ -19,6 +19,7 @@ export type SunmaoUIRuntimeProps = {
   dependencies?: Record<string, any>;
   hooks?: AppHooks;
   isInEditor?: boolean;
+  registerCoreComponent?: boolean;
 };
 
 export function initSunmaoUI(props: SunmaoUIRuntimeProps = {}) {
@@ -37,7 +38,7 @@ export function initSunmaoUI(props: SunmaoUIRuntimeProps = {}) {
       slotReceiver,
     },
     utilMethodManager,
-    false
+    props?.registerCoreComponent ?? true
   );
 
   props.libs?.forEach(lib => {

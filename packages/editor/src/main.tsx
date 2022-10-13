@@ -34,6 +34,7 @@ const { Editor, registry } = initSunmaoUIEditor({
     libs: [sunmaoChakraUILib, ArcoDesignLib],
     isInEditor: true,
   },
+  registerCoreComponent: false,
 });
 
 export default function renderApp(options: Options = {}) {

@@ -27,6 +27,7 @@ type SunmaoUIEditorProps = {
   storageHandler?: StorageHandler;
   defaultApplication?: Application;
   defaultModules?: Module[];
+  registerCoreComponent?: boolean;
 };
 
 export function initSunmaoUIEditor(props: SunmaoUIEditorProps = {}) {
@@ -64,6 +65,7 @@ export function initSunmaoUIEditor(props: SunmaoUIEditorProps = {}) {
 
   const ui = initSunmaoUI({
     ...props.runtimeProps,
+    registerCoreComponent: props.registerCoreComponent,
     hooks: { didMount, didUpdate, didDomUpdate },
   });
 
