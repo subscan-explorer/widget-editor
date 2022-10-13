@@ -1,6 +1,6 @@
 {
   "name": "@sunmao-ui-fork/editor-sdk",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "The SDK for SunMao Editor",
   "author": "sunmao-ui developers",
   "homepage": "https://github.com/smartxworks/sunmao-ui#readme",
@@ -30,7 +30,7 @@
     "@emotion/css": "^11.7.1",
     "@sinclair/typebox": "^0.21.2",
     "@sunmao-ui-fork/core": "^0.7.5",
-    "@sunmao-ui-fork/runtime": "^0.7.8",
+    "@sunmao-ui-fork/runtime": "^0.7.9",
     "@sunmao-ui-fork/shared": "^0.2.6",
     "ajv": "^8.8.2",
     "codemirror": "^5.63.3",
