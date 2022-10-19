@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import { ComponentSchema } from '@sunmao-ui-fork/core';
 import {
   VStack,
@@ -48,13 +48,12 @@ export const GraphQL: React.FC<Props> = props => {
   const [query, setQuery] = useState<string | undefined>(
     trait?.properties.query as Static<typeof GraphQLTraitPropertiesSpec>['query']
   );
-  const [variables, setVariables] = useState<string>(
-    (
-      (trait?.properties.variables as Static<
-        typeof GraphQLTraitPropertiesSpec
-      >['variables']) || '{{{}}}'
-    ).toString()
-  );
+  const initVariables = trait?.properties.variables as Static<
+    typeof GraphQLTraitPropertiesSpec
+  >['variables'];
+  const parsedInitVariables =
+    typeof initVariables === 'string' ? initVariables : JSON.stringify(initVariables);
+  const [variables, setVariables] = useState<string>(parsedInitVariables || '{{{}}}');
 
   const [url, setUrl] = useState<string>(
     trait?.properties.url as Static<typeof GraphQLTraitPropertiesSpec>['url']
@@ -162,6 +161,7 @@ export const GraphQL: React.FC<Props> = props => {
         executeCallback={executeCallback}
         query={trait?.properties.query as string}
         variables={evalVariables}
+        headerEditorEnabled={false}
         onEditQuery={data => {
           setQuery(data);
         }}
