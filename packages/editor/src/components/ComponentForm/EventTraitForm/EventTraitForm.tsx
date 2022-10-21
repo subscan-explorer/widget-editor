@@ -2,7 +2,12 @@ import React, { useMemo, useCallback } from 'react';
 import { VStack } from '@chakra-ui/react';
 import { Static } from '@sinclair/typebox';
 import { ComponentSchema } from '@sunmao-ui-fork/core';
-import { CORE_VERSION, CoreTraitName, EventHandlerSpec } from '@sunmao-ui-fork/shared';
+import {
+  CORE_VERSION,
+  CoreTraitName,
+  EventHandlerSpec,
+  MountEvents,
+} from '@sunmao-ui-fork/shared';
 import { ArrayField, mergeWidgetOptionsIntoSpec } from '@sunmao-ui-fork/editor-sdk';
 import { genOperation } from '../../../operations';
 import { EditorServices } from '../../../types';
@@ -27,7 +32,7 @@ export const EventTraitForm: React.FC<Props> = props => {
   }, [component]);
 
   const eventTypes = useMemo(() => {
-    return registry.getComponentByType(component.type).spec.events;
+    return [...registry.getComponentByType(component.type).spec.events, ...MountEvents];
   }, [component.type, registry]);
 
   const onChange = useCallback(
