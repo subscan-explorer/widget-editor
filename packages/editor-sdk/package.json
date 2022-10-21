@@ -33,7 +33,7 @@
     "@sunmao-ui-fork/runtime": "^0.7.10",
     "@sunmao-ui-fork/shared": "^0.2.6",
     "ajv": "^8.8.2",
-    "codemirror": "^5.63.3",
+    "codemirror": "^5.65.9",
     "formik": "^2.2.9",
     "framer-motion": "^3.10.6",
     "immer": "^9.0.6",

@@ -5618,15 +5618,15 @@ codemirror-graphql@^1.3.2:
   dependencies:
     graphql-language-service "^5.0.6"
 
-codemirror@^5.63.3:
-  version "5.63.3"
-  resolved "https://registry.npmjs.org/codemirror/-/codemirror-5.63.3.tgz"
-  integrity sha512-1C+LELr+5grgJYqwZKqxrcbPsHFHapVaVAloBsFBASbpLnQqLw1U8yXJ3gT5D+rhxIiSpo+kTqN+hQ+9ialIXw==
-
 codemirror@^5.65.3:
   version "5.65.8"
   resolved "https://registry.npmjs.org/codemirror/-/codemirror-5.65.8.tgz#50f145ba7eb725091110c31f3a7c1fdef6bdc721"
   integrity sha512-TNGkSkkoAsmZSf6W6g35LMVQJBHKasc2CKwhr/fTxSYun7cn6J+CbtyNjV/MYlFVkNTsqZoviegyCZimWhoMMA==
+
+codemirror@^5.65.9:
+  version "5.65.9"
+  resolved "https://registry.npmjs.org/codemirror/-/codemirror-5.65.9.tgz#ec70c92aa206ee4c9853d5f1e7c4ed356cdab68c"
+  integrity sha512-19Jox5sAKpusTDgqgKB5dawPpQcY+ipQK7xoEI+MVucEF9qqFaXpeqY1KaoyGBso/wHQoDa4HMMxMjdsS3Zzzw==
 
 collect-v8-coverage@^1.0.0:
   version "1.0.1"
