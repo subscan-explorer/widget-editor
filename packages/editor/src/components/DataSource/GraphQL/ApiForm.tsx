@@ -33,6 +33,18 @@ interface Props {
 
 const EMPTY_ARRAY: string[] = [];
 
+const DEMO = {
+  query: `
+query Plants($first: Int) {
+  allPeople(first: $first) {
+    edges {
+      cursor
+    }
+  }
+}`,
+  url: 'https://swapi-graphql.netlify.app/.netlify/functions/index',
+};
+
 export const GraphQL: React.FC<Props> = props => {
   const { api, className, services } = props;
   const { registry, eventBus, editorStore, stateManager } = services;
@@ -44,19 +56,25 @@ export const GraphQL: React.FC<Props> = props => {
     [api.traits]
   );
   const trait = useMemo(() => api.traits[traitIndex], [api.traits, traitIndex]);
-
   const [query, setQuery] = useState<string | undefined>(
-    trait?.properties.query as Static<typeof GraphQLTraitPropertiesSpec>['query']
+    (trait?.properties.query as Static<typeof GraphQLTraitPropertiesSpec>['query']) ||
+      DEMO.query
   );
+
   const initVariables = trait?.properties.variables as Static<
     typeof GraphQLTraitPropertiesSpec
   >['variables'];
   const parsedInitVariables =
-    typeof initVariables === 'string' ? initVariables : JSON.stringify(initVariables);
+    typeof initVariables === 'string'
+      ? initVariables
+      : JSON.stringify(initVariables) === '{}'
+      ? '{{{}}}'
+      : JSON.stringify(initVariables);
   const [variables, setVariables] = useState<string>(parsedInitVariables || '{{{}}}');
 
   const [url, setUrl] = useState<string>(
-    trait?.properties.url as Static<typeof GraphQLTraitPropertiesSpec>['url']
+    (trait?.properties.url as Static<typeof GraphQLTraitPropertiesSpec>['url']) ||
+      DEMO.url
   );
   const fetcher = createGraphiQLFetcher({
     url: stateManager.deepEval<string>(url) as string,
@@ -159,7 +177,7 @@ export const GraphQL: React.FC<Props> = props => {
 
       <GraphiQL
         executeCallback={executeCallback}
-        query={trait?.properties.query as string}
+        query={query}
         variables={evalVariables}
         headerEditorEnabled={false}
         onEditQuery={data => {
