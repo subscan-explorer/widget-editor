@@ -37,6 +37,75 @@ const DefaultDependencies = {
   dayjs,
 };
 
+const EcmascriptBuildInObjectsKey = [
+  '!name',
+  '!define',
+  'Infinity',
+  'undefined',
+  'NaN',
+  'Object',
+  'Array',
+  'String',
+  'Number',
+  'Boolean',
+  'RegExp',
+  'Date',
+  'Error',
+  'SyntaxError',
+  'ReferenceError',
+  'URIError',
+  'RangeError',
+  'TypeError',
+  'parseInt',
+  'parseFloat',
+  'isNaN',
+  'isFinite',
+  'encodeURI',
+  'encodeURIComponent',
+  'decodeURI',
+  'decodeURIComponent',
+  'Math',
+  'JSON',
+  'ArrayBuffer',
+  'DataView',
+  'Float32Array',
+  'Float64Array',
+  'Int16Array',
+  'Int32Array',
+  'Int8Array',
+  'Map',
+  'Promise',
+  'Proxy',
+  'Reflect',
+  'Set',
+  'Symbol',
+  'Uint16Array',
+  'Uint32Array',
+  'Uint8Array',
+  'Uint8ClampedArray',
+  'WeakMap',
+  'WeakSet',
+];
+
+const sandboxProxy = new Proxy(
+  {},
+  {
+    has(_target, key) {
+      if (key === 'store') return false;
+      if (key === 'dependencies') return false;
+      if (key === 'scopeObject') return false;
+      if (EcmascriptBuildInObjectsKey.indexOf(key.toString()) > -1) return false;
+      return true;
+    },
+    get(_target, _key) {
+      // if (key === Symbol.unscopables) return undefined;
+      // return target[key];
+      // return undefined;
+      throw Error('no function');
+    },
+  }
+);
+
 export class ExpressionError extends Error {
   constructor(message: string) {
     super(message);
@@ -85,14 +154,15 @@ export class StateManager {
     try {
       // eslint-disable-next-line no-useless-call, no-new-func
       const evaled = new Function(
-        'store, dependencies, scopeObject',
+        'sandbox, store, dependencies, scopeObject',
         // trim leading space and newline
-        `with(store) { with(dependencies) { with(scopeObject) { return ${evalText.replace(
+        `with(sandbox) { with(store) { with(dependencies) { with(scopeObject) { return ${evalText.replace(
           /^\s+/g,
           ''
-        )} } } }`
+        )} } } } }`
       ).call(
         null,
+        sandboxProxy,
         overrideScope ? {} : this.store,
         overrideScope ? {} : this.dependencies,
         scopeObject

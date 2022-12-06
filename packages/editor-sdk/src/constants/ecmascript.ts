@@ -537,39 +537,39 @@ export default {
       'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Object',
     '!doc': 'Creates an object wrapper.',
   },
-  Function: {
-    '!type': 'fn(body: string) -> fn()',
-    prototype: {
-      '!stdProto': 'Function',
-      apply: {
-        '!type': 'fn(this: ?, args: [?])',
-        '!effects': ['call and return !this this=!0 !1.<i> !1.<i> !1.<i>'],
-        '!url':
-          'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function/apply',
-        '!doc':
-          'Calls a function with a given this value and arguments provided as an array (or an array like object).',
-      },
-      call: {
-        '!type': 'fn(this: ?, args?: ?) -> !this.!ret',
-        '!effects': ['call and return !this this=!0 !1 !2 !3 !4'],
-        '!url':
-          'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function/call',
-        '!doc':
-          'Calls a function with a given this value and arguments provided individually.',
-      },
-      bind: {
-        '!type': 'fn(this: ?, args?: ?) -> !custom:Function_bind',
-        '!url':
-          'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function/bind',
-        '!doc':
-          'Creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function was called.',
-      },
-      prototype: '?',
-    },
-    '!url':
-      'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function',
-    '!doc': 'Every function in JavaScript is actually a Function object.',
-  },
+  // Function: {
+  //   '!type': 'fn(body: string) -> fn()',
+  //   prototype: {
+  //     '!stdProto': 'Function',
+  //     apply: {
+  //       '!type': 'fn(this: ?, args: [?])',
+  //       '!effects': ['call and return !this this=!0 !1.<i> !1.<i> !1.<i>'],
+  //       '!url':
+  //         'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function/apply',
+  //       '!doc':
+  //         'Calls a function with a given this value and arguments provided as an array (or an array like object).',
+  //     },
+  //     call: {
+  //       '!type': 'fn(this: ?, args?: ?) -> !this.!ret',
+  //       '!effects': ['call and return !this this=!0 !1 !2 !3 !4'],
+  //       '!url':
+  //         'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function/call',
+  //       '!doc':
+  //         'Calls a function with a given this value and arguments provided individually.',
+  //     },
+  //     bind: {
+  //       '!type': 'fn(this: ?, args?: ?) -> !custom:Function_bind',
+  //       '!url':
+  //         'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function/bind',
+  //       '!doc':
+  //         'Creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function was called.',
+  //     },
+  //     prototype: '?',
+  //   },
+  //   '!url':
+  //     'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function',
+  //   '!doc': 'Every function in JavaScript is actually a Function object.',
+  // },
   Array: {
     '!type': 'fn(size: number) -> !custom:Array_ctor',
     isArray: {
@@ -1639,13 +1639,13 @@ export default {
       'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/URIError',
     '!doc': 'Represents an error when a malformed URI is encountered.',
   },
-  EvalError: {
-    '!type': 'fn(message: string)',
-    prototype: 'Error.prototype',
-    '!url':
-      'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/EvalError',
-    '!doc': 'Represents an error regarding the eval function.',
-  },
+  // EvalError: {
+  //   '!type': 'fn(message: string)',
+  //   prototype: 'Error.prototype',
+  //   '!url':
+  //     'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/EvalError',
+  //   '!doc': 'Represents an error regarding the eval function.',
+  // },
   RangeError: {
     '!type': 'fn(message: string)',
     prototype: 'Error.prototype',
@@ -1686,12 +1686,12 @@ export default {
       'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/isFinite',
     '!doc': 'Determines whether the passed value is a finite number.',
   },
-  eval: {
-    '!type': 'fn(code: string) -> ?',
-    '!url':
-      'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/eval',
-    '!doc': 'Evaluates JavaScript code represented as a string.',
-  },
+  // eval: {
+  //   '!type': 'fn(code: string) -> ?',
+  //   '!url':
+  //     'https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/eval',
+  //   '!doc': 'Evaluates JavaScript code represented as a string.',
+  // },
   encodeURI: {
     '!type': 'fn(uri: string) -> string',
     '!url':
