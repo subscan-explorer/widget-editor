@@ -20,7 +20,7 @@ import { EditorServices } from '../types';
 import { css } from '@emotion/css';
 import { EditorMaskWrapper } from './EditorMaskWrapper';
 import { DataForm } from './DataSource/DataForm';
-import { Explorer } from './Explorer';
+// import { Explorer } from './Explorer';
 import { Resizable } from 're-resizable';
 import { CodeModeModal } from './CodeModeModal';
 import '../graphiql/graphiql.css';
@@ -69,10 +69,10 @@ export const Editor: React.FC<Props> = observer(
 
     const app = useMemo<Application>(() => {
       return {
-        version: 'sunmao/v1',
+        version: 'widget/v1',
         kind: 'Application',
         metadata: {
-          name: 'some App',
+          name: 'subscan widget',
         },
         spec: {
           components,
@@ -178,16 +178,20 @@ export const Editor: React.FC<Props> = observer(
                   setExplorerMenuTab(activatedTab);
                 }}
               >
-                <TabList background="gray.50" whiteSpace="nowrap" justifyContent="center">
-                  <Tab>Explorer</Tab>
+                <TabList
+                  background="gray.50"
+                  whiteSpace="nowrap"
+                  justifyContent="flex-start"
+                >
+                  {/* <Tab>Explorer</Tab> */}
                   <Tab>UI</Tab>
                   <Tab>Data</Tab>
                   <Tab>State</Tab>
                 </TabList>
                 <TabPanels overflow="hidden" height="full" flex="1">
-                  <TabPanel height="full" overflow="auto" p={0}>
+                  {/* <TabPanel height="full" overflow="auto" p={0}>
                     <Explorer services={services} />
-                  </TabPanel>
+                  </TabPanel> */}
                   <TabPanel height="full" overflow="auto" p={0}>
                     <StructureTree
                       components={components}
