@@ -5,10 +5,8 @@ import {
   sunmaoChakraUILib,
   widgets as chakraWidgets,
 } from '@sunmao-ui-fork/chakra-ui-lib';
-import { ArcoDesignLib, widgets as arcoWidgets } from '@sunmao-ui-fork/arco-lib';
 import { initSunmaoUIEditor } from './init';
 import { LocalStorageManager } from './LocalStorageManager';
-import '@sunmao-ui-fork/arco-lib/dist/index.css';
 
 type Options = Partial<{
   components: Parameters<RegistryInterface['registerComponent']>[0][];
@@ -19,7 +17,7 @@ type Options = Partial<{
 
 const lsManager = new LocalStorageManager();
 const { Editor, registry } = initSunmaoUIEditor({
-  widgets: [...chakraWidgets, ...arcoWidgets],
+  widgets: [...chakraWidgets],
   storageHandler: {
     onSaveApp(app) {
       lsManager.saveAppInLS(app);
@@ -31,7 +29,7 @@ const { Editor, registry } = initSunmaoUIEditor({
   defaultApplication: lsManager.getAppFromLS(),
   defaultModules: lsManager.getModulesFromLS(),
   runtimeProps: {
-    libs: [sunmaoChakraUILib, ArcoDesignLib],
+    libs: [sunmaoChakraUILib],
     isInEditor: true,
   },
   registerCoreComponent: false,
