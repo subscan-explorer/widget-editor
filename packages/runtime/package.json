@@ -45,7 +45,8 @@
     "react-resize-detector": "^6.7.6",
     "react-simple-code-editor": "^0.11.0",
     "use-deep-compare": "^1.1.0",
-    "wouter": "^2.7.4"
+    "wouter": "^2.7.4",
+    "react-resizable": "^3.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
