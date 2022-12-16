@@ -1,4 +1,4 @@
-import { RuntimeTrait, RuntimeTraitSchema } from '@sunmao-ui-fork/core';
+import { RuntimeTrait, RuntimeTraitSchema } from '@subscan/widget-core';
 import { UIServices } from './application';
 import { RuntimeFunctions } from './component';
 

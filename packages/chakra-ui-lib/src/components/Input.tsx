@@ -8,7 +8,7 @@ import {
   InputRightElement,
 } from '@chakra-ui/react';
 import { Type } from '@sinclair/typebox';
-import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
+import { implementRuntimeComponent } from '@subscan/widget-runtime';
 import { css } from '@emotion/css';
 import { BASIC, APPEARANCE, BEHAVIOR } from './constants/category';
 

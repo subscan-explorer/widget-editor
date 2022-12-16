@@ -3,7 +3,7 @@ import { Type, Static } from '@sinclair/typebox';
 import { WidgetProps } from '../../types/widget';
 import { implementWidget } from '../../utils/widget';
 import { RecordEditor } from '../Form';
-import { CORE_VERSION, CoreWidgetName } from '@sunmao-ui-fork/shared';
+import { CORE_VERSION, CoreWidgetName } from '@subscan/widget-shared';
 
 const KeyValueWidgetOptions = Type.Object({
   minNum: Type.Optional(Type.Number()),

@@ -1,4 +1,4 @@
-import { CORE_VERSION, CoreTraitName } from '@sunmao-ui-fork/shared';
+import { CORE_VERSION, CoreTraitName } from '@subscan/widget-shared';
 
 export enum DataSourceType {
   API = 'API',

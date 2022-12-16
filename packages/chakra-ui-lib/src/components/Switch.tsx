@@ -1,7 +1,7 @@
 import { Switch } from '@chakra-ui/react';
 import { css } from '@emotion/css';
 import { Type } from '@sinclair/typebox';
-import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
+import { implementRuntimeComponent } from '@subscan/widget-runtime';
 import { useEffect, useState } from 'react';
 import { BASIC } from './constants/category';
 

@@ -1,5 +1,5 @@
-import { ComponentSchema, RuntimeComponent, SlotSpec } from '@sunmao-ui-fork/core';
-import { RegistryInterface } from '@sunmao-ui-fork/runtime';
+import { ComponentSchema, RuntimeComponent, SlotSpec } from '@subscan/widget-core';
+import { RegistryInterface } from '@subscan/widget-runtime';
 import Ajv, { ValidateFunction } from 'ajv';
 import { AppModel } from '../AppModel/AppModel';
 import {

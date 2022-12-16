@@ -1,14 +1,14 @@
 import React, { useMemo, useCallback } from 'react';
 import { VStack } from '@chakra-ui/react';
 import { Static } from '@sinclair/typebox';
-import { ComponentSchema } from '@sunmao-ui-fork/core';
+import { ComponentSchema } from '@subscan/widget-core';
 import {
   CORE_VERSION,
   CoreTraitName,
   EventHandlerSpec,
   MountEvents,
-} from '@sunmao-ui-fork/shared';
-import { ArrayField, mergeWidgetOptionsIntoSpec } from '@sunmao-ui-fork/editor-sdk';
+} from '@subscan/widget-shared';
+import { ArrayField, mergeWidgetOptionsIntoSpec } from '@subscan/widget-editor-sdk';
 import { genOperation } from '../../../operations';
 import { EditorServices } from '../../../types';
 

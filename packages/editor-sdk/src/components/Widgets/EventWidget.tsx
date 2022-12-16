@@ -2,8 +2,8 @@ import React, { useCallback, useEffect, useState, useMemo, Suspense } from 'reac
 import { FormControl, FormLabel, Input, Select } from '@chakra-ui/react';
 import { Type, Static } from '@sinclair/typebox';
 import { useFormik } from 'formik';
-import { GLOBAL_UTIL_METHOD_ID } from '@sunmao-ui-fork/runtime';
-import { ComponentSchema } from '@sunmao-ui-fork/core';
+import { GLOBAL_UTIL_METHOD_ID } from '@subscan/widget-runtime';
+import { ComponentSchema } from '@subscan/widget-core';
 import { WidgetProps } from '../../types/widget';
 import { implementWidget, mergeWidgetOptionsIntoSpec } from '../../utils/widget';
 import { RecordWidget } from './RecordField';
@@ -14,7 +14,7 @@ import {
   CoreWidgetName,
   generateDefaultValueFromSpec,
   MountEvents,
-} from '@sunmao-ui-fork/shared';
+} from '@subscan/widget-shared';
 import { JSONSchema7Object } from 'json-schema';
 import { PREVENT_POPOVER_WIDGET_CLOSE_CLASS } from '../../constants/widget';
 import { Select as ComponentTargetSelect } from '../Select';

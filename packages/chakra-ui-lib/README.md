@@ -1,11 +1,11 @@
-# `@sunmao-ui-fork/chakra-ui-lib`
+# `@subscan/widget-chakra-ui-lib`
 
 > TODO: description
 
 ## Usage
 
 ```
-const chakraUiLib = require('@sunmao-ui-fork/chakra-ui-lib');
+const chakraUiLib = require('@subscan/widget-chakra-ui-lib');
 
 // TODO: DEMONSTRATE API
 ```

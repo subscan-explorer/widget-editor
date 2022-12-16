@@ -1,6 +1,6 @@
 import { implementRuntimeComponent } from '../../utils/buildKit';
 import { Type } from '@sinclair/typebox';
-import { CORE_VERSION, CoreComponentName, StringUnion } from '@sunmao-ui-fork/shared';
+import { CORE_VERSION, CoreComponentName, StringUnion } from '@subscan/widget-shared';
 import { css } from '@emotion/css';
 import { useEffect } from 'react';
 

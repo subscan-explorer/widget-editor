@@ -3,7 +3,7 @@ import {
   AllComponentsValidateContext,
   ValidateErrorResult,
 } from '../interfaces';
-import { CORE_VERSION, CoreTraitName } from '@sunmao-ui-fork/shared';
+import { CORE_VERSION, CoreTraitName } from '@subscan/widget-shared';
 
 class ParentValidatorRule implements AllComponentsValidatorRule {
   kind: 'allComponents' = 'allComponents';

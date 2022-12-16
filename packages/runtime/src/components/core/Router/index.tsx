@@ -1,7 +1,7 @@
 import { Static, Type } from '@sinclair/typebox';
 import { implementRuntimeComponent } from '../../../utils/buildKit';
 import { Switch } from './component';
-import { CORE_VERSION } from '@sunmao-ui-fork/shared';
+import { CORE_VERSION } from '@subscan/widget-shared';
 
 export enum RouteType {
   REDIRECT = 'REDIRECT',

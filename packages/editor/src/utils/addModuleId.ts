@@ -1,9 +1,9 @@
-import { Module } from '@sunmao-ui-fork/core';
+import { Module } from '@subscan/widget-core';
 import * as acorn from 'acorn';
 import * as acornLoose from 'acorn-loose';
 import { simple as simpleWalk } from 'acorn-walk';
 import produce from 'immer';
-import { CORE_VERSION, CoreComponentName } from '@sunmao-ui-fork/shared';
+import { CORE_VERSION, CoreComponentName } from '@subscan/widget-shared';
 
 const ModuleIdPrefix = '{{ $moduleId }}__';
 

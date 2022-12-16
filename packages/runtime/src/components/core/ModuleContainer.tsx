@@ -3,7 +3,7 @@ import {
   ModuleRenderSpec,
   CORE_VERSION,
   CoreComponentName,
-} from '@sunmao-ui-fork/shared';
+} from '@subscan/widget-shared';
 import { ModuleRenderer } from '../_internal/ModuleRenderer';
 
 export default implementRuntimeComponent({

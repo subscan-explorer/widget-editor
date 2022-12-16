@@ -4,10 +4,10 @@ import {
   SpecWidget,
   WidgetProps,
   mergeWidgetOptionsIntoSpec,
-} from '@sunmao-ui-fork/editor-sdk';
+} from '@subscan/widget-editor-sdk';
 import { FormikHelpers, FormikHandlers, FormikState } from 'formik';
-import { FetchTraitPropertiesSpec } from '@sunmao-ui-fork/runtime';
-import { ComponentSchema } from '@sunmao-ui-fork/core';
+import { FetchTraitPropertiesSpec } from '@subscan/widget-runtime';
+import { ComponentSchema } from '@subscan/widget-core';
 import { Static } from '@sinclair/typebox';
 import { EditorServices } from '../../../types';
 

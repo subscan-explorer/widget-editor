@@ -5,7 +5,7 @@ import { SpecWidget } from './SpecWidget';
 import { WidgetProps } from '../../types/widget';
 import { ExpressionWidgetOptionsSpec } from './ExpressionWidget';
 import { implementWidget, mergeWidgetOptionsIntoSpec } from '../../utils/widget';
-import { CORE_VERSION, CoreWidgetName } from '@sunmao-ui-fork/shared';
+import { CORE_VERSION, CoreWidgetName } from '@subscan/widget-shared';
 
 const MultiSpecFieldWidgetOptions = Type.Object({
   expressionOptions: Type.Optional(ExpressionWidgetOptionsSpec),

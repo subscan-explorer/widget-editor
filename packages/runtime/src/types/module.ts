@@ -1,3 +1,3 @@
-import { RuntimeModule } from '@sunmao-ui-fork/core';
+import { RuntimeModule } from '@subscan/widget-core';
 
 export type ImplementedRuntimeModule = RuntimeModule;

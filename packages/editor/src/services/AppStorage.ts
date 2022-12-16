@@ -4,7 +4,7 @@ import {
   ComponentSchema,
   Module,
   RuntimeModule,
-} from '@sunmao-ui-fork/core';
+} from '@subscan/widget-core';
 import { produce } from 'immer';
 import { DefaultNewModule, EmptyAppSchema } from '../constants';
 import { addModuleId, removeModuleId } from '../utils/addModuleId';

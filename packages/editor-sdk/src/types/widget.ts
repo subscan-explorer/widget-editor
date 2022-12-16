@@ -1,6 +1,6 @@
 import React from 'react';
 import { JSONSchema7 } from 'json-schema';
-import { ComponentSchema } from '@sunmao-ui-fork/core';
+import { ComponentSchema } from '@subscan/widget-core';
 import { EditorServices } from './editor';
 import * as TypeBox from '@sinclair/typebox';
 

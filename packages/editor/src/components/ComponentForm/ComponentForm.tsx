@@ -1,9 +1,9 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
 import { Accordion, Input, Text, VStack } from '@chakra-ui/react';
-import { SpecWidget } from '@sunmao-ui-fork/editor-sdk';
-import { parseType } from '@sunmao-ui-fork/core';
-import { generateDefaultValueFromSpec } from '@sunmao-ui-fork/shared';
+import { SpecWidget } from '@subscan/widget-editor-sdk';
+import { parseType } from '@subscan/widget-core';
+import { generateDefaultValueFromSpec } from '@subscan/widget-shared';
 import { css } from '@emotion/css';
 
 import { EventTraitForm } from './EventTraitForm';

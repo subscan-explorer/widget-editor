@@ -1,10 +1,10 @@
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import { RegistryInterface } from '@sunmao-ui-fork/runtime';
+import { RegistryInterface } from '@subscan/widget-runtime';
 import {
   sunmaoChakraUILib,
   widgets as chakraWidgets,
-} from '@sunmao-ui-fork/chakra-ui-lib';
+} from '@subscan/widget-chakra-ui-lib';
 import { initSunmaoUIEditor } from './init';
 import { LocalStorageManager } from './LocalStorageManager';
 

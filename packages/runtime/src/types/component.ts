@@ -6,7 +6,7 @@ import {
   RuntimeComponent,
   SlotSpec,
   MethodSchema,
-} from '@sunmao-ui-fork/core';
+} from '@subscan/widget-core';
 import React from 'react';
 import { UIServices, ComponentParamsFromApp } from './application';
 import { TraitResult } from './trait';

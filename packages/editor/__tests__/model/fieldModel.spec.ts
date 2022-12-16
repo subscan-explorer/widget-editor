@@ -3,7 +3,7 @@ import { FieldModel } from '../../src/AppModel/FieldModel';
 import { ComponentId } from '../../src/AppModel/IAppModel';
 import { registry } from '../services';
 import { ChangeIdMockSchema } from './mock';
-import { CORE_VERSION, CoreTraitName } from '@sunmao-ui-fork/shared';
+import { CORE_VERSION, CoreTraitName } from '@subscan/widget-shared';
 
 describe('Field test', () => {
   it('parse static property', () => {

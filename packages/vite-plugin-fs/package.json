@@ -1,5 +1,5 @@
 {
-  "name": "@sunmao-ui-fork/vite-plugin-fs",
+  "name": "@subscan/widget-vite-plugin-fs",
   "version": "0.0.4",
   "description": "The vite plugin for reading and writing the sunmao schema files through the server",
   "main": "dist/index.js",

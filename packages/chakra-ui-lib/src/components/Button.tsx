@@ -6,7 +6,7 @@ import {
   Text,
   TextPropertySpec,
   implementRuntimeComponent,
-} from '@sunmao-ui-fork/runtime';
+} from '@subscan/widget-runtime';
 import { getColorSchemePropertySpec } from './Types/ColorScheme';
 import { BEHAVIOR, APPEARANCE } from './constants/category';
 

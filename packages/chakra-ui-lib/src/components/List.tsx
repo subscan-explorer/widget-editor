@@ -5,11 +5,11 @@ import {
   LIST_ITEM_EXP,
   LIST_ITEM_INDEX_EXP,
   ModuleRenderer,
-} from '@sunmao-ui-fork/runtime';
-import { ModuleRenderSpec } from '@sunmao-ui-fork/shared';
+} from '@subscan/widget-runtime';
+import { ModuleRenderSpec } from '@subscan/widget-shared';
 import { css } from '@emotion/css';
 import { BASIC } from './constants/category';
-import { CORE_VERSION, CoreWidgetName } from '@sunmao-ui-fork/editor-sdk';
+import { CORE_VERSION, CoreWidgetName } from '@subscan/widget-editor-sdk';
 
 const PropsSpec = Type.Object({
   listData: Type.Array(Type.Record(Type.String(), Type.String()), {

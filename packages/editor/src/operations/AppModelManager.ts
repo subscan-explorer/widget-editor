@@ -1,5 +1,5 @@
-import { ComponentSchema } from '@sunmao-ui-fork/core';
-import { RegistryInterface } from '@sunmao-ui-fork/runtime';
+import { ComponentSchema } from '@subscan/widget-core';
+import { RegistryInterface } from '@subscan/widget-runtime';
 import { EventBusType } from '../services/eventBus';
 import { AppModel } from '../AppModel/AppModel';
 import { IUndoRedoManager, IOperation, OperationList } from './type';

@@ -6,7 +6,7 @@ import {
   parseType,
   parseVersion,
   RuntimeComponentSchema,
-} from '@sunmao-ui-fork/core';
+} from '@subscan/widget-core';
 export class RuntimeAppSchemaManager {
   private runtimeComponentsCache: Record<string, RuntimeComponentSchema> = {};
   private componentsCache: Record<string, ComponentSchema> = {};

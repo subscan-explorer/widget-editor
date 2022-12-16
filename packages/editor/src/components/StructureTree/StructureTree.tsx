@@ -1,11 +1,11 @@
 import React, { useState, useMemo, useRef, useCallback } from 'react';
-import { ComponentSchema } from '@sunmao-ui-fork/core';
+import { ComponentSchema } from '@subscan/widget-core';
 import { Box, Text, VStack } from '@chakra-ui/react';
 import { ComponentTreeWrapper } from './ComponentTree';
 import { DropComponentWrapper } from './DropComponentWrapper';
 import ErrorBoundary from '../ErrorBoundary';
 import { EditorServices } from '../../types';
-import { CORE_VERSION, CoreComponentName } from '@sunmao-ui-fork/shared';
+import { CORE_VERSION, CoreComponentName } from '@subscan/widget-shared';
 import {
   AutoComplete,
   AutoCompleteInput,

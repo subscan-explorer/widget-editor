@@ -1,7 +1,7 @@
 import { Static, Type } from '@sinclair/typebox';
 import { debounce, throttle, delay } from 'lodash';
-import { EventCallBackHandlerSpec } from '@sunmao-ui-fork/shared';
-import { type PropsBeforeEvaled } from '@sunmao-ui-fork/core';
+import { EventCallBackHandlerSpec } from '@subscan/widget-shared';
+import { type PropsBeforeEvaled } from '@subscan/widget-core';
 import { UIServices } from '../types';
 
 const CallbackSpec = Type.Array(EventCallBackHandlerSpec);

@@ -1,4 +1,4 @@
-import { parseExpression, expChunkToString } from '@sunmao-ui-fork/shared';
+import { parseExpression, expChunkToString } from '@subscan/widget-shared';
 import { CustomOptions } from '@sinclair/typebox';
 import * as acorn from 'acorn';
 import * as acornLoose from 'acorn-loose';

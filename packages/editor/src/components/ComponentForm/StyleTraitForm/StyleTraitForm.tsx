@@ -17,14 +17,14 @@ import {
   AccordionIcon,
   AccordionPanel,
 } from '@chakra-ui/react';
-import { ComponentSchema } from '@sunmao-ui-fork/core';
-import { CORE_VERSION, CoreTraitName } from '@sunmao-ui-fork/shared';
+import { ComponentSchema } from '@subscan/widget-core';
+import { CORE_VERSION, CoreTraitName } from '@subscan/widget-shared';
 import {
   FontWidget,
   SizeWidget,
   ColorWidget,
   SpaceWidget,
-} from '@sunmao-ui-fork/editor-sdk';
+} from '@subscan/widget-editor-sdk';
 import { capitalize } from 'lodash';
 import { genOperation } from '../../../operations';
 import { formWrapperCSS } from '../style';

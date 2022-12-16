@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { RuntimeTraitSchema } from '@sunmao-ui-fork/core';
+import { RuntimeTraitSchema } from '@subscan/widget-core';
 import { ImplWrapperProps } from '../../../../types';
 import { merge } from 'lodash';
 import { HandlerMap } from '../../../../services/handler';

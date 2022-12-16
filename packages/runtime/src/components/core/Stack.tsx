@@ -2,7 +2,7 @@ import { implementRuntimeComponent } from '../../utils/buildKit';
 import React, { ReactNode } from 'react';
 import { css, CSSObject } from '@emotion/css';
 import { Static, Type } from '@sinclair/typebox';
-import { StringUnion, CORE_VERSION } from '@sunmao-ui-fork/shared';
+import { StringUnion, CORE_VERSION } from '@subscan/widget-shared';
 
 export const StackPropertySpec = Type.Object({
   align: StringUnion(

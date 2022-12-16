@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { ComponentSchema } from '@sunmao-ui-fork/core';
+import { ComponentSchema } from '@subscan/widget-core';
 import {
   VStack,
   CloseButton,
@@ -12,11 +12,11 @@ import { Static, Type } from '@sinclair/typebox';
 import { EditorServices } from '../../../types';
 import GraphiQL from '../../../graphiql';
 import { css, cx } from '@emotion/css';
-import { CORE_VERSION, CoreTraitName } from '@sunmao-ui-fork/shared';
+import { CORE_VERSION, CoreTraitName } from '@subscan/widget-shared';
 import { genOperation } from '../../../operations';
 import { createGraphiQLFetcher } from '@graphiql/toolkit';
-import { GraphQLTraitPropertiesSpec } from '@sunmao-ui-fork/runtime';
-import { ExpressionWidget } from '@sunmao-ui-fork/editor-sdk';
+import { GraphQLTraitPropertiesSpec } from '@subscan/widget-runtime';
+import { ExpressionWidget } from '@subscan/widget-editor-sdk';
 
 const CssResetStyle = css`
   & .graphiql-container * {

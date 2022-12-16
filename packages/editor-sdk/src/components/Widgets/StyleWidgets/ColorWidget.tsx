@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { CORE_VERSION, StyleWidgetName } from '@sunmao-ui-fork/shared';
+import { CORE_VERSION, StyleWidgetName } from '@subscan/widget-shared';
 import { WidgetProps } from '../../../types/widget';
 import { implementWidget, mergeWidgetOptionsIntoSpec } from '../../../utils/widget';
 import { ExpressionWidget } from '../ExpressionWidget';

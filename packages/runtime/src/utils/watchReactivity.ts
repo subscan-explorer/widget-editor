@@ -21,7 +21,7 @@ import {
   ConsoleType,
   callWithAsyncErrorHandling,
   callWithErrorHandling,
-} from '@sunmao-ui-fork/shared';
+} from '@subscan/widget-shared';
 
 export type WatchEffect = (onInvalidate: InvalidateCbRegistrator) => void;
 

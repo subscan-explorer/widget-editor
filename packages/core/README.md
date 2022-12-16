@@ -1,11 +1,11 @@
-# `@sunmao-ui-fork/core`
+# `@subscan/widget-core`
 
 > TODO: description
 
 ## Usage
 
 ```
-const core = require('@sunmao-ui-fork/core');
+const core = require('@subscan/widget-core');
 
 // TODO: DEMONSTRATE API
 ```

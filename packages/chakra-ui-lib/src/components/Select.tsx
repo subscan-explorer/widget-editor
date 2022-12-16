@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Type } from '@sinclair/typebox';
 import { Select as BaseSelect } from '@chakra-ui/react';
-import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
+import { implementRuntimeComponent } from '@subscan/widget-runtime';
 import { css } from '@emotion/css';
 import { BASIC, BEHAVIOR, APPEARANCE } from './constants/category';
 

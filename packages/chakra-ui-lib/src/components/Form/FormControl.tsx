@@ -10,7 +10,7 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { css } from '@emotion/css';
-import { implementRuntimeComponent, watch } from '@sunmao-ui-fork/runtime';
+import { implementRuntimeComponent, watch } from '@subscan/widget-runtime';
 import { CheckboxStateSpec } from '../Checkbox';
 import { BASIC, BEHAVIOR } from '../constants/category';
 

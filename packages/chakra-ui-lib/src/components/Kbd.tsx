@@ -5,7 +5,7 @@ import {
   implementRuntimeComponent,
   Text,
   TextPropertySpec,
-} from '@sunmao-ui-fork/runtime';
+} from '@subscan/widget-runtime';
 import { css } from '@emotion/css';
 
 const StateSpec = Type.Object({

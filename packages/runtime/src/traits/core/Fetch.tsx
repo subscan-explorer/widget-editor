@@ -6,7 +6,7 @@ import {
   CoreTraitName,
   CORE_VERSION,
   CoreWidgetName,
-} from '@sunmao-ui-fork/shared';
+} from '@subscan/widget-shared';
 import { runEventHandler } from '../../utils/runEventHandler';
 import { implementRuntimeTrait } from '../../utils/buildKit';
 

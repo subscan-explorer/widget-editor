@@ -1,5 +1,5 @@
-import { ComponentSchema } from '@sunmao-ui-fork/core';
-import { CORE_VERSION, CoreTraitName } from '@sunmao-ui-fork/shared';
+import { ComponentSchema } from '@subscan/widget-core';
+import { CORE_VERSION, CoreTraitName } from '@subscan/widget-shared';
 
 export type ChildrenMap = Map<string, SlotsMap>;
 type SlotsMap = Map<string, ComponentSchema[]>;

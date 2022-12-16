@@ -1,4 +1,4 @@
-import { RuntimeComponentSchema } from '@sunmao-ui-fork/core';
+import { RuntimeComponentSchema } from '@subscan/widget-core';
 import { ChildrenMap } from '../types';
 import { PropsSpec as SlotPropsSpec } from '../traits/core/Slot';
 import { Static } from '@sinclair/typebox';

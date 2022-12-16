@@ -5,7 +5,7 @@ import {
   implementRuntimeComponent,
   Text,
   TextPropertySpec,
-} from '@sunmao-ui-fork/runtime';
+} from '@subscan/widget-runtime';
 import { BASIC, BEHAVIOR } from './constants/category';
 
 const PropsSpec = Type.Object({

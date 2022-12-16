@@ -1,5 +1,5 @@
-import { RuntimeComponent, SlotSpec } from '@sunmao-ui-fork/core';
-import { RegistryInterface } from '@sunmao-ui-fork/runtime';
+import { RuntimeComponent, SlotSpec } from '@subscan/widget-core';
+import { RegistryInterface } from '@subscan/widget-runtime';
 import Ajv from 'ajv';
 import { PropertiesValidatorRule } from '.';
 import { IAppModel } from '../AppModel/IAppModel';
@@ -14,7 +14,7 @@ import {
 } from './interfaces';
 import { rules } from './rules';
 import { JSONSchema7 } from 'json-schema';
-import { initAjv } from '@sunmao-ui-fork/shared';
+import { initAjv } from '@subscan/widget-shared';
 
 export class SchemaValidator implements ISchemaValidator {
   private result: ValidateErrorResult[] = [];

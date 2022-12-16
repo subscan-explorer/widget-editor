@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { VStack, FormControl, FormLabel, Input } from '@chakra-ui/react';
-import { ComponentSchema } from '@sunmao-ui-fork/core';
-import { ObjectField, mergeWidgetOptionsIntoSpec } from '@sunmao-ui-fork/editor-sdk';
+import { ComponentSchema } from '@subscan/widget-core';
+import { ObjectField, mergeWidgetOptionsIntoSpec } from '@subscan/widget-editor-sdk';
 import { EditorServices } from '../../../types';
 import { genOperation } from '../../../operations';
 import { css } from '@emotion/css';

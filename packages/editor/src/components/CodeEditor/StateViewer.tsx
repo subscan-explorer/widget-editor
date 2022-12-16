@@ -3,7 +3,7 @@ import { Box, Input } from '@chakra-ui/react';
 import { css } from '@emotion/css';
 import { JSONTree } from 'react-json-tree';
 import { pickBy } from 'lodash';
-import { watch } from '@sunmao-ui-fork/runtime';
+import { watch } from '@subscan/widget-runtime';
 import ErrorBoundary from '../ErrorBoundary';
 
 const theme = {

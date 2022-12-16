@@ -1,4 +1,4 @@
-import { Application, ComponentSchema } from '@sunmao-ui-fork/core';
+import { Application, ComponentSchema } from '@subscan/widget-core';
 
 export const AppSchema: Application = {
   kind: 'Application',

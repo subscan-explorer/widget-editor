@@ -1,4 +1,4 @@
-# @sunmao-ui-fork/vite-plugin-fs
+# @subscan/widget-vite-plugin-fs
 
 The vite plutin for sunmao to read and write the applications and modules schema files.
 
@@ -9,7 +9,7 @@ You should enable the plugin in the `vite.config.js` first.
 ```js
 import * as path from 'path';
 import { defineConfig } from 'vite';
-import sunmaoFsVitePlugin from '@sunmao-ui-fork/vite-plugin-fs';
+import sunmaoFsVitePlugin from '@subscan/widget-vite-plugin-fs';
 import routes from './src/routes';
 
 export default defineConfig({

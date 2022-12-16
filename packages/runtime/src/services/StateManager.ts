@@ -12,8 +12,8 @@ import {
   consoleError,
   ConsoleType,
   ExpChunk,
-} from '@sunmao-ui-fork/shared';
-import { type PropsAfterEvaled } from '@sunmao-ui-fork/core';
+} from '@subscan/widget-shared';
+import { type PropsAfterEvaled } from '@subscan/widget-core';
 
 dayjs.extend(relativeTime);
 dayjs.extend(isLeapYear);

@@ -10,7 +10,7 @@ import {
   CreateUtilMethodOptions,
   SlotSpec,
   MethodSchema,
-} from '@sunmao-ui-fork/core';
+} from '@subscan/widget-core';
 import {
   ComponentImpl,
   ImplementedRuntimeComponent,

@@ -12,7 +12,7 @@ import {
   Accordion,
 } from '@chakra-ui/react';
 import { AddIcon, ChevronDownIcon } from '@chakra-ui/icons';
-import { ComponentSchema } from '@sunmao-ui-fork/core';
+import { ComponentSchema } from '@subscan/widget-core';
 import { Api } from './Api';
 import { Data } from './Data';
 import { EditorServices } from '../../types';

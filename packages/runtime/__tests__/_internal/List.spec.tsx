@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom/extend-expect';
-import { Application } from '@sunmao-ui-fork/core';
+import { Application } from '@subscan/widget-core';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { initSunmaoUI } from '../../src';
 import { clearTesterMap } from '../testLib/Tester';

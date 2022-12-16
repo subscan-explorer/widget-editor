@@ -1,4 +1,4 @@
-import { createApplication } from '@sunmao-ui-fork/core';
+import { createApplication } from '@subscan/widget-core';
 import { resolveChildrenMap } from '../src/utils/resolveChildrenMap';
 
 const origin = createApplication({

@@ -15,7 +15,7 @@ import {
   PRESET_PROPERTY_CATEGORY,
   CORE_VERSION,
   CoreWidgetName,
-} from '@sunmao-ui-fork/shared';
+} from '@subscan/widget-shared';
 import { shouldRender } from '../../utils/condition';
 
 const PRESET_PROPERTY_CATEGORY_WEIGHT: Record<

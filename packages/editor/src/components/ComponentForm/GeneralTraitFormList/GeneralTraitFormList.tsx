@@ -1,6 +1,6 @@
 import React from 'react';
-import { ComponentSchema } from '@sunmao-ui-fork/core';
-import { generateDefaultValueFromSpec } from '@sunmao-ui-fork/shared';
+import { ComponentSchema } from '@subscan/widget-core';
+import { generateDefaultValueFromSpec } from '@subscan/widget-shared';
 import { VStack } from '@chakra-ui/react';
 
 import { AddTraitButton } from './AddTraitButton';

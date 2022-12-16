@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { ComponentSchema } from '@sunmao-ui-fork/core';
-import { watch, FetchTraitPropertiesSpec } from '@sunmao-ui-fork/runtime';
+import { ComponentSchema } from '@subscan/widget-core';
+import { watch, FetchTraitPropertiesSpec } from '@subscan/widget-runtime';
 import { Static, Type } from '@sinclair/typebox';
 import {
   Box,
@@ -18,7 +18,7 @@ import {
   Button,
   CloseButton,
 } from '@chakra-ui/react';
-import { ExpressionWidget, WidgetProps } from '@sunmao-ui-fork/editor-sdk';
+import { ExpressionWidget, WidgetProps } from '@subscan/widget-editor-sdk';
 import { EditIcon } from '@chakra-ui/icons';
 import { useFormik } from 'formik';
 import { Basic } from './Basic';
@@ -28,7 +28,7 @@ import { Body } from './Body';
 import { Response as ResponseInfo } from './Response';
 import { EditorServices } from '../../../types';
 import { genOperation } from '../../../operations';
-import { CORE_VERSION, CoreTraitName } from '@sunmao-ui-fork/shared';
+import { CORE_VERSION, CoreTraitName } from '@subscan/widget-shared';
 
 enum TabIndex {
   Basic,

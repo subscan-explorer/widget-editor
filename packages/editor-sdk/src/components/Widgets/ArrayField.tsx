@@ -8,7 +8,7 @@ import {
   generateDefaultValueFromSpec,
   CORE_VERSION,
   CoreWidgetName,
-} from '@sunmao-ui-fork/shared';
+} from '@subscan/widget-shared';
 import { ExpressionWidgetOptionsSpec } from './ExpressionWidget';
 import { Type, Static } from '@sinclair/typebox';
 import { ArrayTable } from '../Form/ArrayTable';

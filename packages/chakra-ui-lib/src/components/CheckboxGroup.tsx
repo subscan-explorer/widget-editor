@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Type } from '@sinclair/typebox';
 import { Box, CheckboxGroup as BaseCheckboxGroup } from '@chakra-ui/react';
-import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
+import { implementRuntimeComponent } from '@subscan/widget-runtime';
 import { SizePropertySpec, IsDisabledSpec } from './Checkbox';
 import { BASIC } from './constants/category';
 

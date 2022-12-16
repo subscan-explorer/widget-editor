@@ -4,7 +4,7 @@ import {
   EventCallBackHandlerSpec,
   LIST_ITEM_EXP,
   LIST_ITEM_INDEX_EXP,
-} from '@sunmao-ui-fork/shared';
+} from '@subscan/widget-shared';
 import { BASIC, APPEARANCE, BEHAVIOR } from '../constants/category';
 
 export const MajorKeyPropertySpec = Type.String({

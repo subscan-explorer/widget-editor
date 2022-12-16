@@ -384,7 +384,7 @@ const InputImpl = props => {
 写完 Component 的 Spec 和 Implementation 以后，离成功只差最后一步，就是把二者封装成 Sunmao runtime 能接受的格式。这一步很简单，只需要调用 `implementRuntimeComponent` 函数即可。
 
 ```javascript
-import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
+import { implementRuntimeComponent } from '@subscan/widget-runtime';
 
 const InputComponent = implementRuntimeComponent(InputSpec)(InputImpl);
 ```

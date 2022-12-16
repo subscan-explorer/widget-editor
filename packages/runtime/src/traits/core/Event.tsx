@@ -6,7 +6,7 @@ import {
   CORE_VERSION,
   CoreTraitName,
   MountEvent,
-} from '@sunmao-ui-fork/shared';
+} from '@subscan/widget-shared';
 import { runEventHandler } from '../../utils/runEventHandler';
 
 const HandlersSpec = Type.Array(EventHandlerSpec);

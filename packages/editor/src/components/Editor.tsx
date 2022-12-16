@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useCallback, useEffect } from 'react';
-import { Application } from '@sunmao-ui-fork/core';
-import { DIALOG_CONTAINER_ID, initSunmaoUI, SunmaoLib } from '@sunmao-ui-fork/runtime';
+import { Application } from '@subscan/widget-core';
+import { DIALOG_CONTAINER_ID, initSunmaoUI, SunmaoLib } from '@subscan/widget-runtime';
 import { Box, Tabs, TabList, Tab, TabPanels, TabPanel, Flex } from '@chakra-ui/react';
 import { observer } from 'mobx-react-lite';
 import { StructureTree } from './StructureTree';

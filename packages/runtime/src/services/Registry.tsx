@@ -1,5 +1,5 @@
 import { JSONSchema7 } from 'json-schema';
-import { parseType, SlotSpec } from '@sunmao-ui-fork/core';
+import { parseType, SlotSpec } from '@subscan/widget-core';
 // components
 /* --- core --- */
 import CoreText from '../components/core/Text';

@@ -10,8 +10,8 @@ import {
 } from '@chakra-ui/react';
 import { DataSourceItem } from './DataSourceItem';
 import { EditorServices } from '../../types';
-import { ComponentSchema } from '@sunmao-ui-fork/core';
-import { watch } from '@sunmao-ui-fork/runtime';
+import { ComponentSchema } from '@subscan/widget-core';
+import { watch } from '@subscan/widget-runtime';
 
 interface Props {
   datas: ComponentSchema[];

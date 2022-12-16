@@ -1,4 +1,4 @@
-import { Application } from '@sunmao-ui-fork/core';
+import { Application } from '@subscan/widget-core';
 
 export const AppSchema: Application = {
   kind: 'Application',

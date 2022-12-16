@@ -1,17 +1,17 @@
 import { merge } from 'lodash';
-import { RegistryInterface } from '@sunmao-ui-fork/runtime';
+import { RegistryInterface } from '@subscan/widget-runtime';
 import {
   generateDefaultValueFromSpec,
   CORE_VERSION,
   CoreTraitName,
   AnyTypePlaceholder,
-} from '@sunmao-ui-fork/shared';
+} from '@subscan/widget-shared';
 import {
   ComponentSchema,
   MethodSchema,
   RuntimeComponent,
   SlotSpec,
-} from '@sunmao-ui-fork/core';
+} from '@subscan/widget-core';
 import { genComponent, genTrait } from './utils';
 import {
   ComponentId,

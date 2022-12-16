@@ -1,6 +1,6 @@
 import { Type } from '@sinclair/typebox';
 import { implementRuntimeTrait } from '../../utils/buildKit';
-import { CORE_VERSION, CoreTraitName } from '@sunmao-ui-fork/shared';
+import { CORE_VERSION, CoreTraitName } from '@subscan/widget-shared';
 import { FetcherParams } from '@graphiql/toolkit';
 
 export const GraphQLTraitPropertiesSpec = Type.Object({

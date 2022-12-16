@@ -1,5 +1,5 @@
 import { Type } from '@sinclair/typebox';
-import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
+import { implementRuntimeComponent } from '@subscan/widget-runtime';
 import {
   ColumnsPropertySpec,
   DataPropertySpec,

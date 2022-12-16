@@ -1,7 +1,7 @@
 import React from 'react';
 import { WidgetProps } from '../../types/widget';
 import { implementWidget } from '../../utils/widget';
-import { CORE_VERSION, CoreWidgetName } from '@sunmao-ui-fork/shared';
+import { CORE_VERSION, CoreWidgetName } from '@subscan/widget-shared';
 
 type NullFieldType = `${typeof CORE_VERSION}/${CoreWidgetName.NullField}`;
 type Props = WidgetProps<NullFieldType>;

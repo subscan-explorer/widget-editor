@@ -1,5 +1,5 @@
 {
-  "name": "@sunmao-ui-fork/vite-plugins",
+  "name": "@subscan/widget-vite-plugins",
   "version": "1.0.6",
   "description": "vite plugins for sunmao-ui",
   "author": "sunmao-ui developers",

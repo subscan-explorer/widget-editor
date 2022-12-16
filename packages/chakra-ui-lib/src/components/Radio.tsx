@@ -5,7 +5,7 @@ import {
   implementRuntimeComponent,
   Text,
   TextPropertySpec,
-} from '@sunmao-ui-fork/runtime';
+} from '@subscan/widget-runtime';
 import { getColorSchemePropertySpec } from './Types/ColorScheme';
 import { css } from '@emotion/css';
 import { BASIC, BEHAVIOR, APPEARANCE, LAYOUT } from './constants/category';

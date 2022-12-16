@@ -1,6 +1,6 @@
 import { implementRuntimeComponent } from '../../src/utils/buildKit';
 import { Type } from '@sinclair/typebox';
-import { PRESET_PROPERTY_CATEGORY } from '@sunmao-ui-fork/shared';
+import { PRESET_PROPERTY_CATEGORY } from '@subscan/widget-shared';
 export default implementRuntimeComponent({
   version: 'custom/v1',
   metadata: {

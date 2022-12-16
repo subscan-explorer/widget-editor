@@ -1,6 +1,6 @@
 import { Type } from '@sinclair/typebox';
 import { Stack as BaseStack } from '@chakra-ui/react';
-import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
+import { implementRuntimeComponent } from '@subscan/widget-runtime';
 import { LAYOUT } from './constants/category';
 
 export const DirectionSpec = Type.Union(

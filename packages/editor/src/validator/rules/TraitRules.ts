@@ -4,7 +4,7 @@ import {
   TraitValidateContext,
   ValidateErrorResult,
 } from '../interfaces';
-import { GLOBAL_UTIL_METHOD_ID } from '@sunmao-ui-fork/runtime';
+import { GLOBAL_UTIL_METHOD_ID } from '@subscan/widget-runtime';
 import { isExpression } from '../utils';
 import { ComponentId, EventName } from '../../AppModel/IAppModel';
 import {
@@ -13,7 +13,7 @@ import {
   EventHandlerSpec,
   MountEvents,
   MountEvent,
-} from '@sunmao-ui-fork/shared';
+} from '@subscan/widget-shared';
 import { get } from 'lodash';
 import { ErrorObject } from 'ajv';
 

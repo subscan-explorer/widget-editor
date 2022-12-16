@@ -7,7 +7,7 @@ import {
   generateDefaultValueFromSpec,
   CORE_VERSION,
   CoreComponentName,
-} from '@sunmao-ui-fork/shared';
+} from '@subscan/widget-shared';
 import { JSONSchema7Object } from 'json-schema';
 
 export type CreateDataSourceBranchOperationContext = {

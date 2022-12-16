@@ -389,7 +389,7 @@ const InputImpl = props => {
 After writing the *Spec* and *Implementation* of *Component*, the only step away from success is to encapsulate the two into a format acceptable to Sunmao runtime. This step is very simple, just call the `implementRuntimeComponent` function.
 
 ````javascript
-import { implementRuntimeComponent } from '@sunmao-ui-fork/runtime';
+import { implementRuntimeComponent } from '@subscan/widget-runtime';
 
 const InputComponent = implementRuntimeComponent(InputSpec)(InputImpl);
 ````

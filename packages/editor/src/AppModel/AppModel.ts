@@ -1,6 +1,6 @@
-import { ComponentSchema, parseType } from '@sunmao-ui-fork/core';
-import { RegistryInterface } from '@sunmao-ui-fork/runtime';
-import { CORE_VERSION, CoreComponentName } from '@sunmao-ui-fork/shared';
+import { ComponentSchema, parseType } from '@subscan/widget-core';
+import { RegistryInterface } from '@subscan/widget-runtime';
+import { CORE_VERSION, CoreComponentName } from '@subscan/widget-shared';
 import { ComponentModel } from './ComponentModel';
 import {
   ComponentId,

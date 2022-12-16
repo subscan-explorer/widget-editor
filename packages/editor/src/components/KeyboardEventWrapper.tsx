@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Box } from '@chakra-ui/react';
 import { css } from '@emotion/css';
-import { ComponentSchema } from '@sunmao-ui-fork/core';
+import { ComponentSchema } from '@subscan/widget-core';
 import { genOperation } from '../operations';
 import { PasteManager } from '../operations/PasteManager';
 import { EditorServices } from '../types';

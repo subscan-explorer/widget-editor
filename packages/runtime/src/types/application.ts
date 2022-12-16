@@ -3,7 +3,7 @@ import { GlobalHandlerMap } from '../services/handler';
 import { RegistryInterface } from '../services/Registry';
 import { StateManagerInterface } from '../services/StateManager';
 import { SlotReceiver } from '../services/SlotReciver';
-import { Application } from '@sunmao-ui-fork/core';
+import { Application } from '@subscan/widget-core';
 
 export type UIServices = {
   registry: RegistryInterface;

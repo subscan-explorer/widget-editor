@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react';
-import { Application, createModule, Module } from '@sunmao-ui-fork/core';
-import { initSunmaoUI, SunmaoLib } from '@sunmao-ui-fork/runtime';
+import { Application, createModule, Module } from '@subscan/widget-core';
+import { initSunmaoUI, SunmaoLib } from '@subscan/widget-runtime';
 import React from 'react';
 import ErrorBoundary from '../ErrorBoundary';
 import { GeneralModal } from '../GeneralModal';

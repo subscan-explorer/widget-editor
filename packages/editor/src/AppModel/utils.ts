@@ -1,5 +1,5 @@
-import { ComponentSchema, TraitSchema } from '@sunmao-ui-fork/core';
-import { RegistryInterface } from '@sunmao-ui-fork/runtime';
+import { ComponentSchema, TraitSchema } from '@subscan/widget-core';
+import { RegistryInterface } from '@subscan/widget-runtime';
 
 export function genComponent(
   registry: RegistryInterface,

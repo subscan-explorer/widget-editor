@@ -1,8 +1,8 @@
 import React from 'react';
-import { SlotSpec } from '@sunmao-ui-fork/core';
+import { SlotSpec } from '@subscan/widget-core';
 import { ImplWrapperProps, SlotsElements } from '../../../../types';
 import { ImplWrapper } from '../ImplWrapper';
-import { shallowCompare } from '@sunmao-ui-fork/shared';
+import { shallowCompare } from '@subscan/widget-shared';
 
 export function formatSlotKey(componentId: string, slot: string, key: string): string {
   /**

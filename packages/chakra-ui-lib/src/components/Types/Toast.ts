@@ -1,6 +1,6 @@
 import { Type, Static, TProperties, TObject } from '@sinclair/typebox';
 import { createStandaloneToast } from '@chakra-ui/react';
-import { implementUtilMethod } from '@sunmao-ui-fork/runtime';
+import { implementUtilMethod } from '@subscan/widget-runtime';
 
 const ToastPosition = Type.KeyOf(
   Type.Object({
