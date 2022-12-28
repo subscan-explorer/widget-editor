@@ -17,9 +17,10 @@ import {
   Input,
   Button,
   CloseButton,
+  useDisclosure,
 } from '@chakra-ui/react';
 import { ExpressionWidget, WidgetProps } from '@subscan/widget-editor-sdk';
-import { EditIcon } from '@chakra-ui/icons';
+import { EditIcon, StarIcon } from '@chakra-ui/icons';
 import { useFormik } from 'formik';
 import { Basic } from './Basic';
 import { Headers as HeadersForm } from './Headers';
@@ -29,6 +30,8 @@ import { Response as ResponseInfo } from './Response';
 import { EditorServices } from '../../../types';
 import { genOperation } from '../../../operations';
 import { CORE_VERSION, CoreTraitName } from '@subscan/widget-shared';
+import { SubscanApiModal } from './SubscanApiModal';
+import { APIMetaData } from './SubscanApi';
 
 enum TabIndex {
   Basic,
@@ -53,6 +56,8 @@ export const ApiForm: React.FC<Props> = props => {
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState(api.id);
   const [tabIndex, setTabIndex] = useState(0);
+  const { isOpen: SubscanApiisOpen, onOpen, onClose } = useDisclosure();
+
   const { registry, eventBus } = services;
   const result = useMemo(() => {
     return reactiveStore[api.id]?.fetch ?? {};
@@ -129,6 +134,26 @@ export const ApiForm: React.FC<Props> = props => {
       formik.handleSubmit();
     },
     [formik]
+  );
+  const onTemplateApply = useCallback(
+    (template: APIMetaData) => {
+      console.log('onTemplateApply', template);
+      formik.setFieldValue('url', template.url);
+      formik.setFieldValue('method', template.method);
+      formik.setFieldValue('headers', template.headers);
+      if (template.payload) {
+        formik.setFieldValue('bodyType', 'JSON');
+        formik.setFieldValue('body', template.payload);
+      } else {
+        formik.setFieldValue('body', {});
+      }
+      if (template.method === 'get' && tabIndex === TabIndex.Body) {
+        setTabIndex(0);
+      }
+
+      formik.handleSubmit();
+    },
+    [formik, tabIndex]
   );
   const onKeyDown = useCallback((e: React.KeyboardEvent) => {
     // prevent form keyboard events to accidentally trigger operation shortcut
@@ -232,6 +257,7 @@ export const ApiForm: React.FC<Props> = props => {
               onChange={onURLChange}
             />
           </Box>
+          <IconButton aria-label="Search database" icon={<StarIcon />} onClick={onOpen} />
         </HStack>
         <Button colorScheme="blue" isLoading={result.loading} onClick={onFetch}>
           Run
@@ -279,6 +305,9 @@ export const ApiForm: React.FC<Props> = props => {
         </VStack>
       </Tabs>
       <ResponseInfo {...result} />
+      {SubscanApiisOpen && (
+        <SubscanApiModal onClose={onClose} onApply={onTemplateApply} />
+      )}
     </VStack>
   );
 };
