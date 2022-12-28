@@ -234,6 +234,7 @@ export const Editor: React.FC<Props> = observer(
                   height="100%"
                   display="flex"
                   flexDirection="column"
+                  lazyBehavior="keepMounted"
                   index={toolMenuTab}
                   onChange={onRightTabChange}
                   isLazy
