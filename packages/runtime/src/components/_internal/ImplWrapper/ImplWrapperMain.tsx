@@ -167,6 +167,7 @@ export const ImplWrapperMain = React.forwardRef<HTMLDivElement, ImplWrapperProps
 
     const C = unmount ? null : (
       <Impl
+        data-widget-id={c.id}
         ref={ref}
         key={c.id}
         {...omit(props, ['slotContext'])}
