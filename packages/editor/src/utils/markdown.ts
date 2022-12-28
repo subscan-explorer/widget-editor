@@ -6,7 +6,7 @@ export const renderMarkdown = (src: string) => {
   // https://github.com/markdown-it/markdown-it/blob/master/docs/architecture.md#renderer
   const defaultRender =
     md.renderer.rules.link_open ||
-    function (tokens, idx, options, env, self) {
+    function (tokens, idx, options, _env, self) {
       return self.renderToken(tokens, idx, options);
     };
 
