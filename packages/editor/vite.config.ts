@@ -1,13 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { virtualExamplePlugin } from '@subscan/widget-vite-plugins';
 import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: './',
   plugins: [
-    virtualExamplePlugin(),
     react({
       jsxRuntime: 'classic',
     }),
@@ -23,7 +21,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(__dirname, './index.html'),
-        playground: resolve(__dirname, './playground.html'),
       },
     },
   },

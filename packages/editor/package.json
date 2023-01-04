@@ -73,7 +73,6 @@
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
     "@originjs/vite-plugin-commonjs": "^1.0.3",
-    "@subscan/widget-vite-plugins": "^1.0.6",
     "@swc/core": "^1.2.121",
     "@types/codemirror": "^5.60.5",
     "@types/escodegen": "^0.0.7",
