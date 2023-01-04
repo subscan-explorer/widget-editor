@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom/extend-expect';
 import { Application } from '@subscan/widget-core';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import { initSunmaoUI } from '../../src';
+import { initWidgetUI } from '../../src';
 import { clearTesterMap } from '../testLib/Tester';
 import { TestLib } from '../testLib';
 
@@ -144,7 +144,7 @@ const ListEventSchema: Application = {
 };
 
 describe('Core List Component', () => {
-  const { App, stateManager } = initSunmaoUI({ libs: [TestLib] });
+  const { App, stateManager } = initWidgetUI({ libs: [TestLib] });
   stateManager.mute = true;
   it('can render component directly', () => {
     const { unmount } = render(<App options={ListSchema} />);

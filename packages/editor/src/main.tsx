@@ -5,7 +5,7 @@ import {
   sunmaoChakraUILib,
   widgets as chakraWidgets,
 } from '@subscan/widget-chakra-ui-lib';
-import { initSunmaoUIEditor } from './init';
+import { initWidgetUIEditor } from './init';
 import { LocalStorageManager } from './LocalStorageManager';
 
 type Options = Partial<{
@@ -16,7 +16,7 @@ type Options = Partial<{
 }>;
 
 const lsManager = new LocalStorageManager();
-const { Editor, registry } = initSunmaoUIEditor({
+const { Editor, registry } = initWidgetUIEditor({
   widgets: [...chakraWidgets],
   storageHandler: {
     onSaveApp(app) {

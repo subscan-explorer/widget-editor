@@ -11,7 +11,7 @@
     <script type="module">
       import React from 'react';
       import ReactDOM from 'react-dom';
-      import { initSunmaoUI } from './src';
+      import { initWidgetUI } from './src';
       import { ChakraProvider } from '@chakra-ui/react';
       import { sunmaoChakraUILib } from '@subscan/widget-chakra-ui-lib';
       import examples from '@example.json';
@@ -30,7 +30,7 @@
       const rootEl = document.querySelector('#root');
       const render = example => {
         ReactDOM.unmountComponentAtNode(rootEl);
-        const { App, registry } = initSunmaoUI({
+        const { App, registry } = initWidgetUI({
           libs: [sunmaoChakraUILib, ArcoDesignLib],
         });
         const { app, modules = [] } = example.value;

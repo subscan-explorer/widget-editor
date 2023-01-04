@@ -1,5 +1,5 @@
-import { initSunmaoUIEditor } from '../src';
+import { initWidgetUIEditor } from '../src';
 import { sunmaoChakraUILib } from '@subscan/widget-chakra-ui-lib';
-export const { registry } = initSunmaoUIEditor({
+export const { registry } = initWidgetUIEditor({
   runtimeProps: { libs: [sunmaoChakraUILib] },
 });

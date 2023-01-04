@@ -1,5 +1,5 @@
 import { Editor as _Editor } from './components/Editor';
-import { initSunmaoUI, SunmaoUIRuntimeProps } from '@subscan/widget-runtime';
+import { initWidgetUI, WidgetUIRuntimeProps } from '@subscan/widget-runtime';
 import { AppModelManager } from './operations/AppModelManager';
 import React, { useState, useCallback, useEffect } from 'react';
 import {
@@ -23,14 +23,14 @@ import './CSSReset.css';
 
 type SunmaoUIEditorProps = {
   widgets?: ImplementedWidget<any>[];
-  runtimeProps?: SunmaoUIRuntimeProps;
+  runtimeProps?: WidgetUIRuntimeProps;
   storageHandler?: StorageHandler;
   defaultApplication?: Application;
   defaultModules?: Module[];
   registerCoreComponent?: boolean;
 };
 
-export function initSunmaoUIEditor(props: SunmaoUIEditorProps = {}) {
+export function initWidgetUIEditor(props: SunmaoUIEditorProps = {}) {
   const editorTheme = extendTheme(
     withDefaultSize({
       size: 'sm',
@@ -63,7 +63,7 @@ export function initSunmaoUIEditor(props: SunmaoUIEditorProps = {}) {
     if (props.runtimeProps?.hooks?.didDomUpdate) props.runtimeProps.hooks.didDomUpdate();
   };
 
-  const ui = initSunmaoUI({
+  const ui = initWidgetUI({
     ...props.runtimeProps,
     registerCoreComponent: props.registerCoreComponent,
     hooks: { didMount, didUpdate, didDomUpdate },

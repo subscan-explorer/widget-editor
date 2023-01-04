@@ -4,7 +4,7 @@ import { RegistryInterface } from '@subscan/widget-runtime';
 import React, { StrictMode, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import { initSunmaoUIEditor } from './init';
+import { initWidgetUIEditor } from './init';
 import { sunmaoChakraUILib } from '@subscan/widget-chakra-ui-lib';
 
 type Example = {
@@ -17,7 +17,7 @@ type Example = {
 
 const Playground: React.FC<{ examples: Example[] }> = ({ examples }) => {
   const [example, setExample] = useState<Example | null>(examples[0]);
-  const { Editor, registry } = initSunmaoUIEditor({
+  const { Editor, registry } = initWidgetUIEditor({
     runtimeProps: { libs: [sunmaoChakraUILib] },
     defaultApplication: example?.value.app,
   });

@@ -2,7 +2,7 @@ import '@testing-library/jest-dom/extend-expect';
 import { render, screen, waitFor, act } from '@testing-library/react';
 import produce from 'immer';
 import React from 'react';
-import { initSunmaoUI } from '../../src';
+import { initWidgetUI } from '../../src';
 import { TestLib } from '../testLib';
 import { destroyTimesMap, renderTimesMap, clearTesterMap } from '../testLib/Tester';
 import {
@@ -24,7 +24,7 @@ const SingleComponentRenderTimes = '2';
 
 describe('single component condition', () => {
   it('only render one time', () => {
-    const { App } = initSunmaoUI({ libs: [TestLib] });
+    const { App } = initWidgetUI({ libs: [TestLib] });
     const { unmount } = render(<App options={SingleComponentSchema} />);
 
     // simple component will render 2 times, because it have to eval trait and properties twice
@@ -37,7 +37,7 @@ describe('single component condition', () => {
 
 describe('after the schema changes', () => {
   it('the component and its siblings will not unmount after schema changes', () => {
-    const { App } = initSunmaoUI({ libs: [TestLib] });
+    const { App } = initWidgetUI({ libs: [TestLib] });
     const { rerender, unmount } = render(<App options={ComponentSchemaChangeSchema} />);
     expect(screen.getByTestId('staticComponent-destroy-times')).toHaveTextContent('0');
     expect(screen.getByTestId('dynamicComponent-destroy-times')).toHaveTextContent('0');
@@ -59,7 +59,7 @@ describe('after the schema changes', () => {
 
 describe('hidden trait condition', () => {
   it('the hidden component should not merge state in store', () => {
-    const { App, stateManager } = initSunmaoUI({ libs: [TestLib] });
+    const { App, stateManager } = initWidgetUI({ libs: [TestLib] });
     stateManager.mute = true;
     const { unmount } = render(<App options={HiddenTraitSchema} />);
     expect(screen.getByTestId('tester')).toHaveTextContent(SingleComponentRenderTimes);
@@ -73,7 +73,7 @@ describe('hidden trait condition', () => {
 
 describe('when parent rerender change', () => {
   it('the children should not rerender', () => {
-    const { App, stateManager, apiService } = initSunmaoUI({ libs: [TestLib] });
+    const { App, stateManager, apiService } = initWidgetUI({ libs: [TestLib] });
     stateManager.mute = true;
     const { unmount } = render(<App options={ParentRerenderSchema} />);
     const childTester = screen.getByTestId('tester');
@@ -95,7 +95,7 @@ describe('when parent rerender change', () => {
 
 describe('when component merge state synchronously', () => {
   it('it will not cause extra render', () => {
-    const { App, stateManager } = initSunmaoUI({ libs: [TestLib] });
+    const { App, stateManager } = initWidgetUI({ libs: [TestLib] });
     const { unmount } = render(<App options={MergeStateSchema} />);
     expect(screen.getByTestId('tester')).toHaveTextContent(SingleComponentRenderTimes);
     expect(screen.getByTestId('tester-text')).toHaveTextContent('foo-bar-baz');
@@ -111,7 +111,7 @@ describe('when component merge state synchronously', () => {
       draft.spec.components[0] = draft.spec.components[1];
       draft.spec.components[1] = temp;
     });
-    const { App, stateManager } = initSunmaoUI({ libs: [TestLib] });
+    const { App, stateManager } = initWidgetUI({ libs: [TestLib] });
     stateManager.mute = true;
     const { unmount } = render(<App options={newMergeStateSchema} />);
     expect(screen.getByTestId('tester')).toHaveTextContent(SingleComponentRenderTimes);
@@ -130,7 +130,7 @@ describe('when component merge state asynchronously', () => {
     });
 
   it('it will cause extra render', async () => {
-    const { App, stateManager } = initSunmaoUI({ libs: [TestLib] });
+    const { App, stateManager } = initWidgetUI({ libs: [TestLib] });
     stateManager.mute = true;
     const { unmount } = render(<App options={AsyncMergeStateSchema} />);
     await waitFor(timeoutPromise);
@@ -147,7 +147,7 @@ describe('when component merge state asynchronously', () => {
       draft.spec.components[0] = draft.spec.components[1];
       draft.spec.components[1] = temp;
     });
-    const { App, stateManager } = initSunmaoUI({ libs: [TestLib] });
+    const { App, stateManager } = initWidgetUI({ libs: [TestLib] });
     stateManager.mute = true;
     const { unmount } = render(<App options={newMergeStateSchema} />);
     await waitFor(timeoutPromise);
@@ -161,7 +161,7 @@ describe('when component merge state asynchronously', () => {
 
 describe('slot trait if condition', () => {
   it('only teardown component state when it is not hidden before the check', () => {
-    const { App, stateManager, apiService } = initSunmaoUI({ libs: [TestLib] });
+    const { App, stateManager, apiService } = initWidgetUI({ libs: [TestLib] });
     stateManager.mute = true;
     const { unmount } = render(<App options={TabsWithSlotsSchema} />);
     expect(screen.getByTestId('tabs')).toHaveTextContent(`Tab OneTab Two`);
@@ -202,7 +202,7 @@ describe('slot trait if condition', () => {
   });
 
   it('only teardown component state in the last render', () => {
-    const { App, stateManager } = initSunmaoUI({ libs: [TestLib] });
+    const { App, stateManager } = initWidgetUI({ libs: [TestLib] });
     stateManager.mute = true;
     const { unmount } = render(<App options={MultiSlotsSchema} />);
 

@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import { Application, createModule, Module } from '@subscan/widget-core';
-import { initSunmaoUI, SunmaoLib } from '@subscan/widget-runtime';
+import { initWidgetUI, SunmaoLib } from '@subscan/widget-runtime';
 import React from 'react';
 import ErrorBoundary from '../ErrorBoundary';
 import { GeneralModal } from '../GeneralModal';
@@ -20,7 +20,7 @@ export const PreviewModal: React.FC<Props> = ({
   dependencies,
   onClose,
 }) => {
-  const { App, registry } = initSunmaoUI({ libs, dependencies });
+  const { App, registry } = initWidgetUI({ libs, dependencies });
   modules.forEach(m => registry.registerModule(createModule(m)));
 
   return (

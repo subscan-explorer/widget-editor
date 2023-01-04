@@ -1,6 +1,6 @@
 import { Application, Module } from '@subscan/widget-core';
 import {
-  initSunmaoUI,
+  initWidgetUI,
   RegistryInterface,
   StateManagerInterface,
 } from '@subscan/widget-runtime';
@@ -9,7 +9,7 @@ import { EditorStore } from './services/EditorStore';
 import { EventBusType } from './services/eventBus';
 import { AppModelManager } from './operations/AppModelManager';
 
-type ReturnOfInit = ReturnType<typeof initSunmaoUI>;
+type ReturnOfInit = ReturnType<typeof initWidgetUI>;
 
 export type EditorServices = {
   App: ReturnOfInit['App'];

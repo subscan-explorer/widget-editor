@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useCallback, useEffect } from 'react';
 import { Application } from '@subscan/widget-core';
-import { DIALOG_CONTAINER_ID, initSunmaoUI, SunmaoLib } from '@subscan/widget-runtime';
+import { DIALOG_CONTAINER_ID, initWidgetUI, SunmaoLib } from '@subscan/widget-runtime';
 import { Box, Tabs, TabList, Tab, TabPanels, TabPanel, Flex } from '@chakra-ui/react';
 import { observer } from 'mobx-react-lite';
 import { StructureTree } from './StructureTree';
@@ -25,7 +25,7 @@ import { Resizable } from 're-resizable';
 import { CodeModeModal } from './CodeModeModal';
 import '../graphiql/graphiql.css';
 
-type ReturnOfInit = ReturnType<typeof initSunmaoUI>;
+type ReturnOfInit = ReturnType<typeof initWidgetUI>;
 
 type Props = {
   App: ReturnOfInit['App'];

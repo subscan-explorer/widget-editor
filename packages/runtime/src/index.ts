@@ -14,7 +14,7 @@ import { initSlotReceiver } from './services/SlotReciver';
 enableES5();
 setAutoFreeze(false);
 
-export type SunmaoUIRuntimeProps = {
+export type WidgetUIRuntimeProps = {
   libs?: SunmaoLib[];
   dependencies?: Record<string, any>;
   hooks?: AppHooks;
@@ -22,7 +22,7 @@ export type SunmaoUIRuntimeProps = {
   registerCoreComponent?: boolean;
 };
 
-export function initSunmaoUI(props: SunmaoUIRuntimeProps = {}) {
+export function initWidgetUI(props: WidgetUIRuntimeProps = {}) {
   const stateManager = new StateManager(props.dependencies);
   const globalHandlerMap = initGlobalHandlerMap();
   const apiService = initApiService();

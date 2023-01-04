@@ -82,7 +82,7 @@ export function saveModules(modules: Module[]) {
   });
 }
 
-initSunmaoUIEditor({
+initWidgetUIEditor({
   defaultApplication: app,
   defaultModules: modules,
   runtimeProps: config,

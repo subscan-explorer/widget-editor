@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom/extend-expect';
 import { Application, createModule, RuntimeModule } from '@subscan/widget-core';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import { initSunmaoUI } from '../../src';
+import { initWidgetUI } from '../../src';
 import { clearTesterMap } from '../testLib/Tester';
 import { TestLib } from '../testLib';
 
@@ -115,7 +115,7 @@ const ApplicationSchema: Application = {
   },
 };
 describe('ModuleRenderer', () => {
-  const { App, stateManager, registry } = initSunmaoUI({ libs: [TestLib] });
+  const { App, stateManager, registry } = initWidgetUI({ libs: [TestLib] });
   registry.registerModule(ModuleSchema);
   stateManager.mute = true;
   it('can accept properties', () => {
