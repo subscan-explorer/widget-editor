@@ -142,7 +142,7 @@ export const ApiForm: React.FC<Props> = props => {
       formik.setFieldValue('method', template.method);
       formik.setFieldValue('headers', template.headers);
       if (template.payload) {
-        formik.setFieldValue('bodyType', 'JSON');
+        formik.setFieldValue('bodyType', 'json');
         formik.setFieldValue('body', template.payload);
       } else {
         formik.setFieldValue('body', {});
