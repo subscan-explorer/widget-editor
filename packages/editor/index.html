@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Widget Editor</title>
+    <style>
+      #root {
+        width: 100vw;
+        height: 100vh;
+      }
+      /* FIXME: this is only a temporary workaround, use some proper css to fix the scrollbar */
+      .App {
+        padding: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chakraCSSReset" id="root"></div>
+    <script type="module">
+      import renderApp from './src/main.tsx';
+      renderApp();
+    </script>
+  </body>
+</html>

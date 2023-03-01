@@ -1,0 +1,40 @@
+{
+  "name": "@subscan/widget-core",
+  "version": "0.7.5",
+  "description": "@subscan/widget-core",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "unpkg": "dist/iife/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --target es5 --format cjs,esm,iife --legacy-output",
+    "dev": "npm run build -- --watch",
+    "typings": "tsc --emitDeclarationOnly",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "prepublish": "npm run build && npm run typings"
+  },
+  "devDependencies": {
+    "@sinclair/typebox": "^0.21.2",
+    "@swc/core": "^1.2.121",
+    "@types/jest": "^26.0.23",
+    "@types/json-schema": "^7.0.7",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "tsup": "^6.2.2",
+    "typescript": "^4.5.0"
+  },
+  "gitHead": "b586cf668d493190f5a2f85705ef15b7fed30aaa"
+}

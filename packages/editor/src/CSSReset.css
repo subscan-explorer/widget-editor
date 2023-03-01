@@ -1,0 +1,169 @@
+:where(.chakraCSSReset,.chakra-portal) a:focus, :where(.chakraCSSReset,.chakra-portal) button:focus, :where(.chakraCSSReset,.chakra-portal) input:focus, :where(.chakraCSSReset,.chakra-portal) textarea:focus {
+  box-shadow: none !important;
+}
+:where(.chakraCSSReset,.chakra-portal) *, :where(.chakraCSSReset,.chakra-portal) *::before, :where(.chakraCSSReset,.chakra-portal) *::after {
+  border-width: 0;
+  border-style: solid;
+  box-sizing: border-box;
+}
+:where(.chakraCSSReset,.chakra-portal) main {
+  display: block;
+}
+:where(.chakraCSSReset,.chakra-portal) hr {
+  border-top-width: 1px;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+:where(.chakraCSSReset,.chakra-portal) pre, :where(.chakraCSSReset,.chakra-portal) code, :where(.chakraCSSReset,.chakra-portal) kbd, :where(.chakraCSSReset,.chakra-portal) samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 1em;
+}
+:where(.chakraCSSReset,.chakra-portal) a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: inherit;
+}
+:where(.chakraCSSReset,.chakra-portal) abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+:where(.chakraCSSReset,.chakra-portal) b, :where(.chakraCSSReset,.chakra-portal) strong {
+  font-weight: bold;
+}
+:where(.chakraCSSReset,.chakra-portal) small {
+  font-size: 80%;
+}
+:where(.chakraCSSReset,.chakra-portal) sub, :where(.chakraCSSReset,.chakra-portal) sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+:where(.chakraCSSReset,.chakra-portal) sub {
+  bottom: -0.25em;
+}
+:where(.chakraCSSReset,.chakra-portal) sup {
+  top: -0.5em;
+}
+:where(.chakraCSSReset,.chakra-portal) img {
+  border-style: none;
+}
+:where(.chakraCSSReset,.chakra-portal) button, :where(.chakraCSSReset,.chakra-portal) input, :where(.chakraCSSReset,.chakra-portal) optgroup, :where(.chakraCSSReset,.chakra-portal) select, :where(.chakraCSSReset,.chakra-portal) textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+:where(.chakraCSSReset,.chakra-portal) button, :where(.chakraCSSReset,.chakra-portal) input {
+  overflow: visible;
+}
+:where(.chakraCSSReset,.chakra-portal) button, :where(.chakraCSSReset,.chakra-portal) select {
+  text-transform: none;
+}
+:where(.chakraCSSReset,.chakra-portal) button::-moz-focus-inner, :where(.chakraCSSReset,.chakra-portal) [type='button']::-moz-focus-inner, :where(.chakraCSSReset,.chakra-portal) [type='reset']::-moz-focus-inner, :where(.chakraCSSReset,.chakra-portal) [type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+:where(.chakraCSSReset,.chakra-portal) fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+:where(.chakraCSSReset,.chakra-portal) legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+:where(.chakraCSSReset,.chakra-portal) progress {
+  vertical-align: baseline;
+}
+:where(.chakraCSSReset,.chakra-portal) textarea {
+  overflow: auto;
+}
+:where(.chakraCSSReset,.chakra-portal) [type='checkbox'], :where(.chakraCSSReset,.chakra-portal) [type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
+}
+:where(.chakraCSSReset,.chakra-portal) [type='number']::-webkit-inner-spin-button, :where(.chakraCSSReset,.chakra-portal) [type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+}
+:where(.chakraCSSReset,.chakra-portal) input[type='number'] {
+  -moz-appearance: textfield;
+}
+:where(.chakraCSSReset,.chakra-portal) [type='search'] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+:where(.chakraCSSReset,.chakra-portal) [type='search']::-webkit-search-decoration {
+  -webkit-appearance: none !important;
+}
+:where(.chakraCSSReset,.chakra-portal) ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+:where(.chakraCSSReset,.chakra-portal) details {
+  display: block;
+}
+:where(.chakraCSSReset,.chakra-portal) summary {
+  display: list-item;
+}
+:where(.chakraCSSReset,.chakra-portal) template {
+  display: none;
+}
+:where(.chakraCSSReset,.chakra-portal) [hidden] {
+  display: none !important;
+}
+:where(.chakraCSSReset,.chakra-portal) body, :where(.chakraCSSReset,.chakra-portal) blockquote, :where(.chakraCSSReset,.chakra-portal) dl, :where(.chakraCSSReset,.chakra-portal) dd, :where(.chakraCSSReset,.chakra-portal) h1, :where(.chakraCSSReset,.chakra-portal) h2, :where(.chakraCSSReset,.chakra-portal) h3, :where(.chakraCSSReset,.chakra-portal) h4, :where(.chakraCSSReset,.chakra-portal) h5, :where(.chakraCSSReset,.chakra-portal) h6, :where(.chakraCSSReset,.chakra-portal) hr, :where(.chakraCSSReset,.chakra-portal) figure, :where(.chakraCSSReset,.chakra-portal) p, :where(.chakraCSSReset,.chakra-portal) pre {
+  margin: 0;
+}
+:where(.chakraCSSReset,.chakra-portal) button {
+  background: transparent;
+  padding: 0;
+}
+:where(.chakraCSSReset,.chakra-portal) fieldset {
+  margin: 0;
+  padding: 0;
+}
+:where(.chakraCSSReset,.chakra-portal) ol, :where(.chakraCSSReset,.chakra-portal) ul {
+  margin: 0;
+  padding: 0;
+}
+:where(.chakraCSSReset,.chakra-portal) textarea {
+  resize: vertical;
+}
+:where(.chakraCSSReset,.chakra-portal) button, :where(.chakraCSSReset,.chakra-portal) [role='button'] {
+  cursor: pointer;
+}
+:where(.chakraCSSReset,.chakra-portal) button::-moz-focus-inner {
+  border: 0 !important;
+}
+:where(.chakraCSSReset,.chakra-portal) table {
+  border-collapse: collapse;
+}
+:where(.chakraCSSReset,.chakra-portal) h1, :where(.chakraCSSReset,.chakra-portal) h2, :where(.chakraCSSReset,.chakra-portal) h3, :where(.chakraCSSReset,.chakra-portal) h4, :where(.chakraCSSReset,.chakra-portal) h5, :where(.chakraCSSReset,.chakra-portal) h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+:where(.chakraCSSReset,.chakra-portal) button, :where(.chakraCSSReset,.chakra-portal) input, :where(.chakraCSSReset,.chakra-portal) optgroup, :where(.chakraCSSReset,.chakra-portal) select, :where(.chakraCSSReset,.chakra-portal) textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+:where(.chakraCSSReset,.chakra-portal) img, :where(.chakraCSSReset,.chakra-portal) svg, :where(.chakraCSSReset,.chakra-portal) video, :where(.chakraCSSReset,.chakra-portal) canvas, :where(.chakraCSSReset,.chakra-portal) audio, :where(.chakraCSSReset,.chakra-portal) iframe, :where(.chakraCSSReset,.chakra-portal) embed, :where(.chakraCSSReset,.chakra-portal) object {
+  display: block;
+}
+:where(.chakraCSSReset,.chakra-portal) img, :where(.chakraCSSReset,.chakra-portal) video {
+  max-width: 100%;
+  height: auto;
+}
+:where(.chakraCSSReset,.chakra-portal) [data-js-focus-visible] :focus:not([data-focus-visible-added]) {
+  outline: none;
+  box-shadow: none;
+}
+:where(.chakraCSSReset,.chakra-portal) select::-ms-expand {
+  display: none;
+}

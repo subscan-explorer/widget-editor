@@ -1,0 +1,72 @@
+{
+  "name": "@subscan/widget-editor-sdk",
+  "version": "0.3.18",
+  "description": "@subscan/widget-editor-sdk",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "unpkg": "dist/iife/index.js",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsup && npm run visualize",
+    "dev": "tsup --platform browser",
+    "typings": "tsc --emitDeclarationOnly",
+    "prepublish": "npm run build && npm run typings",
+    "test": "jest",
+    "visualize": "esbuild-visualizer --metadata ./dist/metafile-iife.json --exclude *.png"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.15",
+    "@chakra-ui/react": "^1.7.1",
+    "@emotion/css": "^11.7.1",
+    "@sinclair/typebox": "^0.21.2",
+    "@subscan/widget-core": "^0.7.5",
+    "@subscan/widget-runtime": "^0.7.14",
+    "@subscan/widget-shared": "^0.2.7",
+    "ajv": "^8.8.2",
+    "codemirror": "^5.65.9",
+    "formik": "^2.2.9",
+    "framer-motion": "^3.10.6",
+    "immer": "^9.0.6",
+    "lodash": "^4.17.21",
+    "mitt": "^3.0.0",
+    "mobx": "^6.3.8",
+    "mobx-react-lite": "^3.2.2",
+    "rc-select": "^14.1.5",
+    "react-color": "^2.19.3",
+    "tern": "^0.24.3"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/tern": "^0.23.4",
+    "@vitejs/plugin-react": "^2.0.1",
+    "esbuild": "^0.15.5",
+    "tsup": "^6.2.2"
+  },
+  "keywords": [],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,html}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "peerDependencies": {
+    "ajv": "^8.8.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tern": "^0.24.3"
+  },
+  "gitHead": "b586cf668d493190f5a2f85705ef15b7fed30aaa"
+}

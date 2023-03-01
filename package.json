@@ -1,0 +1,54 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "lerna": "lerna",
+    "prepublish": "lerna run prepublish",
+    "test:ci": "jest -c config/jest.ci.config.js",
+    "lint": "eslint packages --ext .ts --ext .tsx",
+    "fix-lint": "eslint --fix packages --ext .ts --ext .tsx",
+    "release": "lerna publish -m 'chore(*): publish'",
+    "release:canary": "branch=$(git rev-parse --abbrev-ref HEAD); lerna publish --canary --preid $branch -m 'chore(*): publish'",
+    "commit": "git cz",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "commitizen": "^4.0.4",
+    "cz-customizable": "^6.2.0",
+    "esbuild-visualizer": "^0.3.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "husky": "^6.0.0",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.5.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint --edit $1"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,html}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "resolutions": {
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1"
+  }
+}

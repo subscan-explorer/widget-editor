@@ -1,0 +1,152 @@
+import { Editor as _Editor } from './components/Editor';
+import { initWidgetUI, WidgetUIRuntimeProps } from '@subscan/widget-runtime';
+import { AppModelManager } from './operations/AppModelManager';
+import React, { useState, useCallback, useEffect } from 'react';
+import {
+  widgets as internalWidgets,
+  WidgetManager,
+  ImplementedWidget,
+} from '@subscan/widget-editor-sdk';
+import {
+  ChakraProvider,
+  extendTheme,
+  withDefaultSize,
+  withDefaultVariant,
+} from '@chakra-ui/react';
+import { initEventBus } from './services/eventBus';
+import { EditorStore } from './services/EditorStore';
+import { StorageHandler } from './types';
+import { AppStorage } from './services/AppStorage';
+import { Application, Module } from '@subscan/widget-core';
+import './styles.css';
+import './CSSReset.css';
+
+type SunmaoUIEditorProps = {
+  widgets?: ImplementedWidget<any>[];
+  runtimeProps?: WidgetUIRuntimeProps;
+  storageHandler?: StorageHandler;
+  defaultApplication?: Application;
+  defaultModules?: Module[];
+  registerCoreComponent?: boolean;
+};
+
+export function initWidgetUIEditor(props: SunmaoUIEditorProps = {}) {
+  const editorTheme = extendTheme(
+    withDefaultSize({
+      size: 'sm',
+      components: [
+        'Input',
+        'NumberInput',
+        'Checkbox',
+        'Radio',
+        'Textarea',
+        'Select',
+        'Switch',
+      ],
+    }),
+    withDefaultVariant({
+      variant: 'filled',
+      components: ['Input', 'NumberInput', 'Textarea', 'Select'],
+    })
+  );
+
+  const didMount = () => {
+    eventBus.send('HTMLElementsUpdated');
+    if (props.runtimeProps?.hooks?.didMount) props.runtimeProps.hooks.didMount();
+  };
+  const didUpdate = () => {
+    eventBus.send('HTMLElementsUpdated');
+    if (props.runtimeProps?.hooks?.didUpdate) props.runtimeProps.hooks.didUpdate();
+  };
+  const didDomUpdate = () => {
+    eventBus.send('HTMLElementsUpdated');
+    if (props.runtimeProps?.hooks?.didDomUpdate) props.runtimeProps.hooks.didDomUpdate();
+  };
+
+  const ui = initWidgetUI({
+    ...props.runtimeProps,
+    registerCoreComponent: props.registerCoreComponent,
+    hooks: { didMount, didUpdate, didDomUpdate },
+  });
+
+  const App = ui.App;
+  const registry = ui.registry;
+
+  const stateManager = ui.stateManager;
+  const eventBus = initEventBus();
+  const appStorage = new AppStorage(
+    props.defaultApplication,
+    props.defaultModules,
+    props.storageHandler
+  );
+  const appModelManager = new AppModelManager(
+    eventBus,
+    registry,
+    appStorage.app.spec.components
+  );
+  const widgetManager = new WidgetManager();
+  const editorStore = new EditorStore(
+    eventBus,
+    registry,
+    stateManager,
+    appStorage,
+    appModelManager
+  );
+  editorStore.eleMap = ui.eleMap;
+
+  const services = {
+    App,
+    registry: ui.registry,
+    apiService: ui.apiService,
+    stateManager,
+    appModelManager,
+    widgetManager,
+    eventBus,
+    editorStore,
+  };
+
+  const Editor: React.FC = () => {
+    const [store, setStore] = useState(stateManager.store);
+    const onRefresh = useCallback(() => {
+      // need to reregister all the traits to clear the trait states which like `HasInitializedMap`
+      const traits = registry.getAllTraits();
+
+      stateManager.clear();
+      setStore(stateManager.store);
+      registry.unregisterAllTraits();
+      traits.forEach(trait => {
+        registry.registerTrait(trait);
+      });
+    }, []);
+
+    useEffect(() => {
+      eventBus.on('stateRefresh', onRefresh);
+      return () => {
+        eventBus.off('stateRefresh');
+      };
+    }, [onRefresh]);
+    return (
+      <ChakraProvider theme={editorTheme} resetCSS={false}>
+        <_Editor
+          App={App}
+          eleMap={ui.eleMap}
+          registry={registry}
+          stateStore={store}
+          services={services}
+          libs={props.runtimeProps?.libs || []}
+          onRefresh={onRefresh}
+          dependencies={props.runtimeProps?.dependencies || {}}
+        />
+      </ChakraProvider>
+    );
+  };
+
+  internalWidgets.concat(props.widgets || []).forEach(widget => {
+    widgetManager.registerWidget(widget);
+  });
+
+  return {
+    Editor,
+    registry,
+  };
+}
