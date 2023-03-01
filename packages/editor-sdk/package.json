@@ -1,6 +1,6 @@
 {
   "name": "@subscan/widget-editor-sdk",
-  "version": "0.3.18",
+  "version": "0.3.19",
   "description": "@subscan/widget-editor-sdk",
   "license": "Apache-2.0",
   "publishConfig": {
@@ -27,9 +27,9 @@
     "@chakra-ui/react": "^1.7.1",
     "@emotion/css": "^11.7.1",
     "@sinclair/typebox": "^0.21.2",
-    "@subscan/widget-core": "^0.7.5",
-    "@subscan/widget-runtime": "^0.7.14",
-    "@subscan/widget-shared": "^0.2.7",
+    "@subscan/widget-core": "^0.7.6",
+    "@subscan/widget-runtime": "^0.7.15",
+    "@subscan/widget-shared": "^0.2.8",
     "ajv": "^8.8.2",
     "codemirror": "^5.65.9",
     "formik": "^2.2.9",
