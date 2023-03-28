@@ -1,6 +1,6 @@
 {
   "name": "@subscan/widget-editor",
-  "version": "0.7.24",
+  "version": "1.0.4",
   "description": "@subscan/widget-editor",
   "license": "Apache-2.0",
   "main": "dist/index.js",
