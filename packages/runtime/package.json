@@ -32,8 +32,8 @@
   "dependencies": {
     "@emotion/css": "^11.7.1",
     "@sinclair/typebox": "^0.21.2",
-    "@subscan/widget-core": "^0.7.7",
-    "@subscan/widget-shared": "^0.2.9",
+    "@subscan/widget-core": "^1.0.0",
+    "@subscan/widget-shared": "^1.0.0",
     "@vue/reactivity": "^3.1.5",
     "@vue/shared": "^3.2.20",
     "copy-to-clipboard": "^3.3.1",
@@ -76,5 +76,5 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
-  "gitHead": "b586cf668d493190f5a2f85705ef15b7fed30aaa"
+  "gitHead": "0df14e35c8d8c15bf915ff339a746b7936c29804"
 }
