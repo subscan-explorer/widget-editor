@@ -1,6 +1,6 @@
 {
   "name": "@subscan/widget-core",
-  "version": "0.7.6",
+  "version": "0.7.7",
   "description": "@subscan/widget-core",
   "license": "Apache-2.0",
   "publishConfig": {

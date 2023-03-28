@@ -1,6 +1,6 @@
 {
   "name": "@subscan/widget-runtime",
-  "version": "0.7.15",
+  "version": "0.7.16",
   "description": "sunmao-ui runtime",
   "author": "sunmao-ui developers",
   "homepage": "https://github.com/smartxworks/sunmao-ui#readme",
@@ -32,8 +32,8 @@
   "dependencies": {
     "@emotion/css": "^11.7.1",
     "@sinclair/typebox": "^0.21.2",
-    "@subscan/widget-core": "^0.7.6",
-    "@subscan/widget-shared": "^0.2.8",
+    "@subscan/widget-core": "^0.7.7",
+    "@subscan/widget-shared": "^0.2.9",
     "@vue/reactivity": "^3.1.5",
     "@vue/shared": "^3.2.20",
     "copy-to-clipboard": "^3.3.1",
