@@ -1,6 +1,6 @@
 {
   "name": "@subscan/widget-vite-plugin-fs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "types": "lib/index.d.ts",
   "files": [
