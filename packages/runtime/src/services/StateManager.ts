@@ -7,6 +7,7 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 import LocalizedFormat from 'dayjs/plugin/localizedFormat';
 import { isProxy, reactive, toRaw } from '@vue/reactivity';
 import { watch } from '../utils/watchReactivity';
+import { evalUtils } from '../utils/EvalUtils';
 import {
   parseExpression,
   consoleError,
@@ -35,11 +36,10 @@ type EvaledResult<T> = T extends string ? unknown : PropsAfterEvaled<Exclude<T, 
 // TODO: use web worker
 const DefaultDependencies = {
   dayjs,
+  Utils: evalUtils,
 };
 
 const EcmascriptBuildInObjectsKey = [
-  '!name',
-  '!define',
   'Infinity',
   'undefined',
   'NaN',
