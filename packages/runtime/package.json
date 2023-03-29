@@ -24,6 +24,7 @@
     "dev": "vite",
     "test": "jest",
     "build": "tsup && npm run visualize",
+    "watch": "tsup --watch",
     "typings": "tsc --emitDeclarationOnly",
     "lint": "eslint src --ext .ts",
     "prepublish": "npm run build && npm run typings",

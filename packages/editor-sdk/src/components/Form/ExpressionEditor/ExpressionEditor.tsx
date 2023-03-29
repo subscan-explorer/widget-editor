@@ -35,6 +35,7 @@ import 'tern/plugin/complete_strings';
 import tern, { Def } from 'tern';
 import { getTypeString } from '../../../utils/type';
 import ecmascript from '../../../constants/ecmascript';
+import utilsScript from '../../../constants/utils';
 
 injectGlobal`
   .CodeMirror-hints {
@@ -80,7 +81,9 @@ const getCursorIndex = (editor: CodeMirror.Editor) => {
 };
 
 function installTern(cm: CodeMirror.Editor) {
-  const t = new CodeMirror.TernServer({ defs: [ecmascript as unknown as Def] });
+  const t = new CodeMirror.TernServer({
+    defs: [ecmascript as unknown as Def, utilsScript as unknown as Def],
+  });
   cm.on('cursorActivity', cm => t.updateArgHints(cm));
   cm.on('change', (_instance, change) => {
     if (!checkIfCursorInsideBinding(_instance)) {

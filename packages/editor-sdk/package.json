@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "build": "tsup && npm run visualize",
+    "watch": "tsup --watch",
     "dev": "tsup --platform browser",
     "typings": "tsc --emitDeclarationOnly",
     "prepublish": "npm run build && npm run typings",
