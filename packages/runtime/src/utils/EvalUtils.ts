@@ -1,3 +1,3 @@
 export const evalUtils = {
-  url: new URL(location.href),
+  url: location ? new URL(location.href) : new URL('https://subscan.io'),
 };
