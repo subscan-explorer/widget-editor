@@ -1,6 +1,6 @@
 {
   "name": "@subscan/widget-editor-sdk",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "@subscan/widget-editor-sdk",
   "license": "Apache-2.0",
   "publishConfig": {
@@ -29,7 +29,7 @@
     "@emotion/css": "^11.7.1",
     "@sinclair/typebox": "^0.21.2",
     "@subscan/widget-core": "^1.0.3",
-    "@subscan/widget-runtime": "^1.0.7",
+    "@subscan/widget-runtime": "^1.0.8",
     "@subscan/widget-shared": "^1.0.3",
     "ajv": "^8.8.2",
     "codemirror": "^5.65.9",
